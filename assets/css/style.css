@@ -1177,7 +1177,7 @@ body {
   }
 
   .game-image {
-    height: 200px; /* Tinggi yang lebih besar untuk mobile */
+    height: 180px; /* Tinggi yang lebih besar untuk mobile */
   }
 
   .game-title {
