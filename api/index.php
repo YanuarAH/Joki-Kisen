@@ -83,7 +83,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
         </section>
     </main>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include dirname(__DIR__) . '/includes/footer.php'; ?>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

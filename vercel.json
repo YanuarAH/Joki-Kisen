@@ -7,12 +7,16 @@
   },
   "rewrites": [
     {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
+      "source": "/games/([^/]+)\\.php",
+      "destination": "/api/$1.php"
     },
     {
       "source": "/games/([^/]+)",
       "destination": "/api/$1.php"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
     },
     {
       "source": "/",
