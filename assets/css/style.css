@@ -1,6 +1,3 @@
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
 /* Reset & Base Styles */
 * {
   margin: 0;
@@ -18,8 +15,8 @@
   --text-primary: #1e293b;
   --text-secondary: #64748b;
   --border: #e2e8f0;
-  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
   --radius: 8px;
 }
 
@@ -32,13 +29,11 @@
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--background);
   color: var(--text-primary);
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -55,7 +50,6 @@ body {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .header-content {
@@ -121,7 +115,6 @@ body {
   border: none;
   cursor: pointer;
   font-size: 0.875rem;
-  font-family: inherit;
 }
 
 .btn-primary {
@@ -131,7 +124,6 @@ body {
 
 .btn-primary:hover {
   background-color: #f59e0b;
-  transform: translateY(-1px);
 }
 
 .btn-success {
@@ -141,7 +133,6 @@ body {
 
 .btn-success:hover {
   background-color: var(--success-hover);
-  transform: translateY(-1px);
 }
 
 /* Hero Section */
@@ -158,8 +149,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* Fallback for browsers that don't support background-clip */
-  color: var(--primary-color);
 }
 
 .hero-description {
@@ -167,6 +156,61 @@ body {
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* Games Section */
+.games-section {
+  padding: 2rem 0 4rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.game-card {
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.game-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.game-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-image img {
+  transform: scale(1.05);
+}
+
+.game-title {
+  padding: 1rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Carousel Section */
@@ -261,11 +305,9 @@ body {
   transition: all 0.3s ease;
   pointer-events: all;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: inherit;
 }
 
 .carousel-btn:hover {
@@ -305,64 +347,78 @@ body {
   background-color: var(--primary-hover);
 }
 
-/* Games Section */
-.games-section {
-  padding: 2rem 0 4rem;
+/* Mobile Carousel Adjustments */
+@media (max-width: 768px) {
+  .carousel-section {
+    padding: 1.5rem 0 2rem;
+  }
+
+  .carousel-container {
+    margin: 0 0.75rem;
+    border-radius: 12px;
+  }
+
+  .carousel-wrapper {
+    height: 160px;
+  }
+
+  .carousel-content {
+    padding: 1rem;
+  }
+
+  .carousel-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .carousel-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .carousel-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .carousel-nav {
+    padding: 0 0.5rem;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
 }
 
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    height: 140px;
+  }
 
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
+  .carousel-content {
+    padding: 0.75rem;
+  }
 
-.game-card {
-  background-color: var(--surface);
-  border-radius: var(--radius);
-  overflow: hidden;
-  text-decoration: none;
-  color: var(--text-primary);
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border);
-}
+  .carousel-title {
+    font-size: 1.1rem;
+  }
 
-.game-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-}
+  .carousel-subtitle {
+    font-size: 0.8rem;
+  }
 
-.game-image {
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background-color: var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .carousel-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
 
-.game-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.game-card:hover .game-image img {
-  transform: scale(1.05);
-}
-
-.game-title {
-  padding: 1rem;
-  font-weight: 600;
-  text-align: center;
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 /* Game Layout */
@@ -383,6 +439,12 @@ body {
   z-index: 90;
 }
 
+.mobile-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .mobile-menu-btn {
   background: none;
   border: none;
@@ -392,10 +454,25 @@ body {
   color: var(--text-primary);
   border-radius: var(--radius);
   transition: background-color 0.2s ease;
-  font-family: inherit;
 }
 
 .mobile-menu-btn:hover {
+  background-color: var(--border);
+}
+
+.mobile-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  border-radius: var(--radius);
+  transition: background-color 0.2s ease;
+  display: none;
+}
+
+.mobile-close-btn:hover {
   background-color: var(--border);
 }
 
@@ -478,6 +555,8 @@ body {
 
 .content-header {
   margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border); /* PERUBAHAN: Menambah garis bawah */
+  padding-bottom: 1.5rem; /* PERUBAHAN: Menambah jarak */
 }
 
 .content-title {
@@ -510,7 +589,7 @@ body {
 .price-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem; /* PERUBAHAN: Menambah jarak antar kartu */
   margin-bottom: 2rem;
 }
 
@@ -522,7 +601,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* PENTING: Mengizinkan item turun ke baris baru */
+  flex-wrap: wrap; /* PENTING: Untuk layout desktop dengan gambar */
   transition: all 0.2s ease;
 }
 
@@ -531,7 +610,7 @@ body {
 }
 
 .price-info {
-    flex-grow: 1;
+    flex-grow: 1; /* PENTING: Untuk layout desktop dengan gambar */
 }
 
 .price-info h3 {
@@ -543,15 +622,6 @@ body {
 .service-unit {
   font-size: 0.875rem;
   color: var(--text-secondary);
-}
-
-.service-image {
-    width: 100%;
-    height: 150px; /* Anda bisa sesuaikan tinggi gambar */
-    object-fit: cover; /* Membuat gambar tidak gepeng */
-    border-radius: var(--radius);
-    margin-bottom: 1rem; /* Memberi jarak ke konten di bawahnya */
-    border: 1px solid var(--border);
 }
 
 .price-display {
@@ -569,135 +639,21 @@ body {
   color: var(--text-secondary);
 }
 
-/* Category Header */
-.category-header {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: var(--surface);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
+/* === BARU: Styling untuk Gambar Layanan === */
+.service-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mengunci rasio agar seragam */
+    object-fit: cover; /* Membuat gambar tidak gepeng */
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
 }
 
-.category-image {
-  flex-shrink: 0;
-  width: 120px;
-  height: 120px;
-  border-radius: var(--radius);
-  overflow: hidden;
-  background-color: var(--border);
-}
-
-.category-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.category-info {
-  flex: 1;
-}
-
-.category-title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.category-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.category-description {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
-
-/* Notes Card */
-.notes-card {
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
-  border: 1px solid #f59e0b;
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-[data-theme="dark"] .notes-card {
-  background: linear-gradient(135deg, #451a03, #78350f);
-  border-color: #92400e;
-}
-
-.notes-card h3 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #92400e;
-}
-
-[data-theme="dark"] .notes-card h3 {
-  color: #fbbf24;
-}
-
-.notes-list {
-  list-style: none;
-  margin: 0;
-}
-
-.notes-list li {
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
-  color: #78350f;
-  line-height: 1.4;
-}
-
-[data-theme="dark"] .notes-list li {
-  color: #fde68a;
-}
-
-/* Enhanced Price Cards */
-.price-card {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: all 0.2s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.price-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.price-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-}
-
-.price-card:hover::before {
-  opacity: 1;
-}
 
 /* Contact Card */
 .contact-card {
-  background-color: rgba(59, 130, 246, 0.05);
-  border: 1px solid rgba(59, 130, 246, 0.1);
+  background-color: var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
 }
@@ -749,13 +705,15 @@ body {
     padding: 0 0.75rem;
   }
 
-  /* Mobile Header - Always visible */
+  /* PERBAIKAN: Mobile Header - Always visible */
   .mobile-header {
     display: flex;
+    height: 4.5rem;
+    padding: 0.75rem 1rem;
   }
 
   .mobile-menu-btn {
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-size: 1.5rem;
   }
 
@@ -807,7 +765,6 @@ body {
     color: var(--text-primary);
     border-radius: var(--radius);
     transition: background-color 0.2s ease;
-    font-family: inherit;
   }
 
   .sidebar-close-btn:hover {
@@ -840,10 +797,16 @@ body {
   }
 
   .content-wrapper {
-    padding: 1rem 0.75rem;
+    /* PERBAIKAN: Menyamakan padding */
+    padding: 1.5rem 1rem;
   }
 
   /* Content adjustments */
+  .content-header {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
   .content-title {
     flex-direction: column;
     align-items: flex-start;
@@ -852,7 +815,7 @@ body {
   }
 
   .content-title h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem; /* PERBAIKAN: Sedikit membesarkan judul */
     line-height: 1.2;
   }
 
@@ -870,11 +833,12 @@ body {
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.25rem; /* PERBAIKAN: Menambah padding */
   }
 
   .price-info {
     text-align: left;
+    flex-grow: 0; /* PERBAIKAN: Reset flex-grow untuk mobile */
   }
 
   .price-info h3 {
@@ -894,6 +858,7 @@ body {
     padding: 0.75rem;
     background-color: var(--border);
     border-radius: var(--radius);
+    margin-top: 0.5rem; /* PERBAIKAN: Menambah jarak */
   }
 
   .price {
@@ -952,49 +917,6 @@ body {
   .hero-description {
     font-size: 1rem;
     line-height: 1.5;
-  }
-
-  /* Carousel Mobile */
-  .carousel-section {
-    padding: 1.5rem 0 2rem;
-  }
-
-  .carousel-container {
-    margin: 0 0.75rem;
-    border-radius: 12px;
-  }
-
-  .carousel-wrapper {
-    height: 160px;
-  }
-
-  .carousel-content {
-    padding: 1rem;
-  }
-
-  .carousel-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .carousel-subtitle {
-    font-size: 0.85rem;
-    line-height: 1.3;
-  }
-
-  .carousel-btn {
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-  }
-
-  .carousel-nav {
-    padding: 0 0.5rem;
-  }
-
-  .indicator {
-    width: 10px;
-    height: 10px;
   }
 
   /* Games Grid Mobile */
@@ -1096,48 +1018,6 @@ body {
   }
 }
 
-/* Mobile Category Header */
-@media (max-width: 768px) {
-  .category-header {
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .category-image {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-  }
-
-  .category-title-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .category-title {
-    font-size: 1.5rem;
-  }
-
-  .category-description {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .notes-card {
-    padding: 1rem;
-  }
-
-  .notes-card h3 {
-    font-size: 1rem;
-  }
-
-  .notes-list li {
-    font-size: 0.8rem;
-  }
-}
-
 /* Extra Small Mobile */
 @media (max-width: 480px) {
   .sidebar {
@@ -1159,33 +1039,6 @@ body {
 
   .hero-description {
     font-size: 0.9rem;
-  }
-
-  .carousel-wrapper {
-    height: 140px;
-  }
-
-  .carousel-content {
-    padding: 0.75rem;
-  }
-
-  .carousel-title {
-    font-size: 1.1rem;
-  }
-
-  .carousel-subtitle {
-    font-size: 0.8rem;
-  }
-
-  .carousel-btn {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.2rem;
-  }
-
-  .indicator {
-    width: 8px;
-    height: 8px;
   }
 
   .games-grid {
@@ -1238,34 +1091,5 @@ body {
 
   .btn:active {
     transform: scale(0.98);
-  }
-
-  .carousel-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: none;
-  }
-
-  .carousel-btn:active {
-    transform: scale(0.95);
-  }
-}
-
-/* Print Styles */
-@media print {
-  .header,
-  .sidebar,
-  .mobile-header,
-  .carousel-section,
-  .footer {
-    display: none;
-  }
-
-  .game-content {
-    width: 100%;
-  }
-
-  .content-wrapper {
-    padding: 0;
-    max-width: none;
   }
 }
