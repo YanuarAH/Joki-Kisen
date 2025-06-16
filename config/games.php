@@ -14,17 +14,17 @@ $games = [
                     ['name' => 'Dragonspine', 'price' => '40K', 'image' => 'assets/images/genshin/map/dragonspine.jpg'],
                     ['name' => 'Liyue', 'price' => '20K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/liyue.png'],
                     ['name' => 'Chenju Valley', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/chenju.png'],
-                    ['name' => 'Chasm (Atas + Bawah)', 'price' => '60K', 'images' => 'assets/images/genshin/map/chasm.jpg'],
-                    ['name' => 'Chasm Atas', 'price' => '25K', 'images' => 'assets/images/genshin/map/chasm_atas.jpg'],
-                    ['name' => 'Chasm Bawah', 'price' => '35K', 'images' => 'assets/images/genshin/map/chasm_bawah.jpg'],
-                    ['name' => 'Inazuma', 'price' => '30K', 'unit' => 'wilayah', 'images' => 'assets/images/genshin/map/inazuma.jpg'],
-                    ['name' => 'Enkanomiya', 'price' => '50K', 'images' => 'assets/images/genshin/map/enkanomiya.png'],
-                    ['name' => 'Sumeru Hutan', 'price' => '25K', 'unit' => 'wilayah', 'images' => 'assets/images/genshin/map/sumeru.jpg'],
-                    ['name' => 'Sumeru Desert', 'price' => '35K', 'unit' => 'wilayah', 'images' => 'assets/images/genshin/map/sumeru_pasir.jpg'],
-                    ['name' => 'Fontaine', 'price' => '25K', 'unit' => 'wilayah', 'images' => 'assets/images/genshin/map/fountaine.jpg'],
-                    ['name' => 'Sea of Bygone', 'price' => '35K', 'images' => 'assets/images/genshin/map/seaofbyo.jpg'],
-                    ['name' => 'Natlan', 'price' => '30K', 'unit' => 'wilayah', 'images' => 'assets/images/genshin/map/natlan.jpg'],
-                    ['name' => 'Ancient Sacred Mountain', 'price' => '50K', 'images' => 'assets/images/genshin/map/ancient.jpg'],
+                    ['name' => 'Chasm (Atas + Bawah)', 'price' => '60K', 'image' => 'assets/images/genshin/map/chasm.jpg'],
+                    ['name' => 'Chasm Atas', 'price' => '25K', 'image' => 'assets/images/genshin/map/chasm_atas.jpg'],
+                    ['name' => 'Chasm Bawah', 'price' => '35K', 'image' => 'assets/images/genshin/map/chasm_bawah.jpg'],
+                    ['name' => 'Inazuma', 'price' => '30K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/inazuma.jpg'],
+                    ['name' => 'Enkanomiya', 'price' => '50K', 'image' => 'assets/images/genshin/map/enkanomiya.png'],
+                    ['name' => 'Sumeru Hutan', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/sumeru.jpg'],
+                    ['name' => 'Sumeru Desert', 'price' => '35K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/sumeru_pasir.jpg'],
+                    ['name' => 'Fontaine', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/fountaine.jpg'],
+                    ['name' => 'Sea of Bygone', 'price' => '35K', 'image' => 'assets/images/genshin/map/seaofbyo.jpg'],
+                    ['name' => 'Natlan', 'price' => '30K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/natlan.jpg'],
+                    ['name' => 'Ancient Sacred Mountain', 'price' => '50K', 'image' => 'assets/images/genshin/map/ancient.jpg'],
                 ]
             ],
             'explore_percent' => [
@@ -77,25 +77,84 @@ $games = [
     'hsr' => [
         'title' => 'Honkai: Star Rail',
         'image' => 'assets/images/hsr.jpg',
+        'slot_info' => 'SLOT (0/4) DISKON PRICE 🙏',
         'categories' => [
-            'story' => [
-                'title' => 'Story Mode',
-                'description' => 'Joki HSR Story',
-                'image' => 'assets/images/hsr-story.jpg',
-                'services' => [
-                    ['name' => 'Main Story', 'price' => '75K', 'unit' => 'chapter'],
-                    ['name' => 'Character Story', 'price' => '30K', 'unit' => 'quest'],
-                    ['name' => 'Side Quest', 'price' => '20K', 'unit' => 'quest'],
-                ]
-            ],
-            'endgame' => [
-                'title' => 'End Game',
-                'description' => 'Joki HSR End Game',
+            'endgame_content' => [
+                'title' => 'End Game Content',
+                'description' => 'Joki End Game HSR - Pengerjaan Manual',
                 'image' => 'assets/images/hsr-endgame.jpg',
                 'services' => [
-                    ['name' => 'Memory of Chaos', 'price' => '100K', 'unit' => '36 star'],
-                    ['name' => 'Pure Fiction', 'price' => '75K', 'unit' => '12 star'],
-                    ['name' => 'Simulated Universe', 'price' => '50K', 'unit' => 'world'],
+                    ['name' => 'Trace n Drift', 'price' => '10K', 'unit' => 'clear'],
+                    ['name' => 'Manusia Pentung', 'price' => '10K', 'unit' => 'clear'],
+                    ['name' => 'Farm Jade 1.600 (Ladang Luas)', 'price' => '10K', 'unit' => 'farm'],
+                ]
+            ],
+            'rawat_akun' => [
+                'title' => 'Rawat Akun 🛠',
+                'description' => 'Layanan Rawat Akun HSR Profesional',
+                'image' => 'assets/images/hsr-maintenance.jpg',
+                'services' => [
+                    ['name' => 'Daily', 'price' => '3K', 'unit' => 'hari'],
+                    ['name' => 'Weekly', 'price' => '25K', 'unit' => 'minggu'],
+                    ['name' => 'Monthly', 'price' => '40K', 'unit' => 'bulan'],
+                    ['name' => '1 Patch', 'price' => '120K', 'unit' => 'patch'],
+                ]
+            ],
+            'explore_map' => [
+                'title' => 'Explore Map 🗺',
+                'description' => 'Joki Explore Semua Map HSR + Puzzle',
+                'image' => 'assets/images/hsr-explore.jpg',
+                'services' => [
+                    ['name' => 'All Amphoreus (inc Nymph + All Puzzle)', 'price' => '70K', 'unit' => 'wilayah'],
+                    ['name' => 'All Xianzhou (inc All Puzzle)', 'price' => '40K', 'unit' => 'wilayah'],
+                    ['name' => 'All Belobog (inc All Puzzle)', 'price' => '20K', 'unit' => 'wilayah'],
+                    ['name' => 'All Space Herta (inc All Puzzle)', 'price' => '20K', 'unit' => 'wilayah'],
+                    ['name' => 'All Penacony (inc Sticker + Bird + Puzzle)', 'price' => '160K', 'unit' => 'wilayah'],
+                ]
+            ],
+            'story_quest' => [
+                'title' => 'Quest Story 🟡',
+                'description' => 'Ready Buat Story Quest Terbaru 👍🏻',
+                'image' => 'assets/images/hsr-story.jpg',
+                'services' => [
+                    ['name' => 'Space Herta', 'price' => '20K', 'unit' => 'story'],
+                    ['name' => 'Belobog', 'price' => '25K', 'unit' => 'story'],
+                    ['name' => 'Luofu', 'price' => '40K', 'unit' => 'story'],
+                    ['name' => 'Penacony', 'price' => '70K', 'unit' => 'story'],
+                    ['name' => 'Ampho 3.0 - 3.3', 'price' => '60K', 'unit' => 'story'],
+                ]
+            ],
+            'other_quest' => [
+                'title' => 'Quest Lainnya',
+                'description' => 'Berbagai Jenis Quest HSR',
+                'image' => 'assets/images/hsr-other-quest.jpg',
+                'services' => [
+                    ['name' => 'Quest Lanjutan 🟠', 'price' => '10K', 'unit' => 'quest'],
+                    ['name' => 'Quest Ungu 🟣', 'price' => '3K', 'unit' => 'quest'],
+                    ['name' => 'Quest Biru 🔵', 'price' => '2K', 'unit' => 'quest'],
+                ]
+            ],
+            'event' => [
+                'title' => 'Event New & Nostalgia 🔔',
+                'description' => 'Joki Event HSR Terbaru dan Lama',
+                'image' => 'assets/images/hsr-event.jpg',
+                'services' => [
+                    ['name' => 'Event Kecil', 'price' => '10K', 'unit' => 'event'],
+                    ['name' => 'Event Sedang', 'price' => '20K', 'unit' => 'event'],
+                    ['name' => 'Event Besar', 'price' => '30K', 'unit' => 'event'],
+                ]
+            ],
+            'leveling_world' => [
+                'title' => 'Leveling World',
+                'description' => 'Joki Leveling dan Simulated Universe',
+                'image' => 'assets/images/hsr-leveling.jpg',
+                'services' => [
+                    ['name' => 'Patung Clockie', 'price' => '3K', 'unit' => 'level'],
+                    ['name' => 'Swarm Disaster', 'price' => '60K', 'unit' => 'clear'],
+                    ['name' => 'Gold and Gears', 'price' => '60K', 'unit' => 'clear'],
+                    ['name' => 'Zona Rahasia', 'price' => '50K', 'unit' => 'clear'],
+                    ['name' => 'Divergent Universe (Per Level)', 'price' => '1K', 'unit' => 'level'],
+                    ['name' => 'Divergent Universe (MAX)', 'price' => '80K', 'unit' => 'max clear'],
                 ]
             ]
         ]

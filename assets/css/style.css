@@ -10,22 +10,14 @@
   --primary-hover: #2563eb;
   --success-color: #10b981;
   --success-hover: #059669;
-  --background: #ffffff;
-  --surface: #f8fafc;
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
-  --border: #e2e8f0;
+  --background: #0f172a;   /* Diubah ke warna gelap */
+  --surface: #1e293b;    /* Diubah ke warna gelap */
+  --text-primary: #f1f5f9; /* Diubah ke warna gelap */
+  --text-secondary: #94a3b8;/* Diubah ke warna gelap */
+  --border: #334155;      /* Diubah ke warna gelap */
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
   --radius: 8px;
-}
-
-[data-theme="dark"] {
-  --background: #0f172a;
-  --surface: #1e293b;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --border: #334155;
 }
 
 body {
@@ -485,10 +477,10 @@ body {
 }
 
 .sidebar-content {
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem; 
 }
 
 .sidebar-title {
@@ -642,7 +634,7 @@ body {
 /* === BARU: Styling untuk Gambar Layanan === */
 .service-image {
     width: 100%;
-    height: auto;
+    height: 150px;
     aspect-ratio: 16 / 9; /* Mengunci rasio agar seragam */
     object-fit: cover; /* Membuat gambar tidak gepeng */
     border-radius: var(--radius);

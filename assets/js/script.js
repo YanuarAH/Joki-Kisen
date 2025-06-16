@@ -1,29 +1,3 @@
-// Theme Management
-function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute("data-theme")
-  const newTheme = currentTheme === "dark" ? "light" : "dark"
-
-  document.documentElement.setAttribute("data-theme", newTheme)
-  localStorage.setItem("theme", newTheme)
-
-  // Update theme icon
-  const themeIcon = document.querySelector(".theme-icon")
-  if (themeIcon) {
-    themeIcon.textContent = newTheme === "dark" ? "☀️" : "🌙"
-  }
-}
-
-// Initialize theme
-function initTheme() {
-  const savedTheme = localStorage.getItem("theme") || "light"
-  document.documentElement.setAttribute("data-theme", savedTheme)
-
-  const themeIcon = document.querySelector(".theme-icon")
-  if (themeIcon) {
-    themeIcon.textContent = savedTheme === "dark" ? "☀️" : "🌙"
-  }
-}
-
 // Sidebar Management
 function toggleSidebar() {
   const sidebar = document.querySelector(".sidebar")
@@ -166,7 +140,6 @@ function initTouchHandling() {
 
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
-  initTheme()
   initTouchHandling()
   initCarousel() // Add this line
 
