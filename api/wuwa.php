@@ -2,8 +2,8 @@
 require_once dirname(__DIR__) . '/config/games.php';
 $game_id = 'wuwa';
 $game = $games[$game_id];
-$current_category = $_GET['category'] ?? 'story';
-$category = $game['categories'][$current_category] ?? $game['categories']['story'];
+$current_category = $_GET['category'] ?? 'rawat_akun';
+$category = $game['categories'][$current_category] ?? $game['categories']['rawat_akun'];
 $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config['site_name'];
 ?>
 <!DOCTYPE html>
