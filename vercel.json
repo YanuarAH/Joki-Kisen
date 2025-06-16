@@ -1,18 +1,18 @@
 {
   "version": 2,
   "functions": {
-    "api/**/*.php": {
+    "pages/**/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
   },
   "rewrites": [
     {
       "source": "/games/([^/]+)\\.php",
-      "destination": "/api/$1.php"
+      "destination": "/pages/games/$1.php"
     },
     {
       "source": "/games/([^/]+)",
-      "destination": "/api/$1.php"
+      "destination": "/pages/games/$1.php"
     },
     {
       "source": "/assets/(.*)",
@@ -20,7 +20,7 @@
     },
     {
       "source": "/",
-      "destination": "/api/index.php"
+      "destination": "/pages/index.php"
     }
   ]
 }

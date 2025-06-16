@@ -1,9 +1,11 @@
 <?php 
-require_once dirname(__DIR__) . '/config/games.php';
-$game_id = 'genshin';
+require_once dirname(dirname(__DIR__)) . '/config/games.php';
+include dirname(dirname(__DIR__)) . '/includes/header.php';
+include dirname(dirname(__DIR__)) . '/includes/sidebar.php';
+$game_id = 'zzz';
 $game = $games[$game_id];
-$current_category = $_GET['category'] ?? 'explore';
-$category = $game['categories'][$current_category] ?? $game['categories']['explore'];
+$current_category = $_GET['category'] ?? 'story';
+$category = $game['categories'][$current_category] ?? $game['categories']['story'];
 $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config['site_name'];
 ?>
 <!DOCTYPE html>
@@ -16,10 +18,9 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <?php include dirname(__DIR__) . '/includes/header.php'; ?>
+    <?php include dirname(dirname(__DIR__)) . '/includes/header.php'; ?>
     
     <div class="game-layout">
-        <!-- Mobile Header -->
         <div class="mobile-header">
             <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
             <h1><?php echo $game['title']; ?></h1>
@@ -29,7 +30,6 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
         
         <main class="game-content">
             <div class="content-wrapper">
-                <!-- Header -->
                 <div class="content-header">
                     <div class="content-title">
                         <h1><?php echo $category['title']; ?></h1>
@@ -38,7 +38,6 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
                     <p class="content-description"><?php echo $category['description']; ?></p>
                 </div>
 
-                <!-- Price List -->
                 <div class="price-list">
                     <?php foreach ($category['services'] as $service): ?>
                     <div class="price-card">
@@ -54,7 +53,6 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
                     <?php endforeach; ?>
                 </div>
 
-                <!-- Contact Info -->
                 <div class="contact-card">
                     <h3>Cara Pemesanan</h3>
                     <p>Hubungi kami untuk melakukan pemesanan joki</p>
