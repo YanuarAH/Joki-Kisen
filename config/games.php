@@ -77,7 +77,6 @@ $games = [
     'hsr' => [
         'title' => 'Honkai: Star Rail',
         'image' => 'assets/images/hsr.jpg',
-        'slot_info' => 'SLOT (0/4) DISKON PRICE 🙏',
         'categories' => [
             'endgame_content' => [
                 'title' => 'End Game Content',
@@ -188,24 +187,58 @@ $games = [
         'title' => 'Wuthering Waves',
         'image' => 'assets/images/wuwa.jpg',
         'categories' => [
-            'story' => [
-                'title' => 'Story Mode',
-                'description' => 'Joki WuWa Story',
-                'image' => 'assets/images/wuwa-story.jpg',
+            'rawat_akun' => [
+                'title' => 'Rawat Akun',
+                'description' => 'Layanan Rawat Akun WuWa Profesional - Pengerjaan Manual 100%',
+                'image' => 'assets/images/wuwa-maintenance.jpg',
                 'services' => [
-                    ['name' => 'Main Story', 'price' => '70K', 'unit' => 'chapter'],
-                    ['name' => 'Character Quest', 'price' => '30K', 'unit' => 'quest'],
-                    ['name' => 'Side Quest', 'price' => '20K', 'unit' => 'quest'],
+                    ['name' => 'Harian', 'price' => '3K', 'unit' => 'hari'],
+                    ['name' => 'Mingguan', 'price' => '60K', 'unit' => 'minggu'],
+                    ['name' => 'Bulanan', 'price' => '150K', 'unit' => 'bulan'],
+                    ['name' => '1 Patch', 'price' => '200K', 'unit' => 'patch'],
                 ]
             ],
-            'endgame' => [
-                'title' => 'End Game',
-                'description' => 'Joki WuWa End Game',
-                'image' => 'assets/images/wuwa-endgame.jpg',
+            'explore_map' => [
+                'title' => 'Explore All Map',
+                'description' => 'Joki Explore Semua Map WuWa - 100% Manual',
+                'image' => 'assets/images/wuwa-explore.jpg',
                 'services' => [
-                    ['name' => 'Tower of Adversity', 'price' => '90K', 'unit' => 'full clear'],
-                    ['name' => 'Tacet Field', 'price' => '10K', 'unit' => 'run'],
-                    ['name' => 'Weekly Boss', 'price' => '20K', 'unit' => 'boss'],
+                    ['name' => 'Huanglong', 'price' => '200K', 'unit' => 'wilayah'],
+                    ['name' => 'Rinascita', 'price' => '150K', 'unit' => 'wilayah'],
+                    ['name' => 'BlackShores', 'price' => '60K', 'unit' => 'wilayah'],
+                    ['name' => 'Septimont', 'price' => '50K', 'unit' => 'wilayah'],
+                ]
+            ],
+            'all_quest' => [
+                'title' => 'All Quest',
+                'description' => 'Joki Semua Jenis Quest WuWa',
+                'image' => 'assets/images/wuwa-quest.jpg',
+                'services' => [
+                    ['name' => 'Main Quest', 'price' => '10K', 'unit' => 'act'],
+                    ['name' => 'Exploration Quest', 'price' => '8K', 'unit' => 'quest'],
+                    ['name' => 'Companion Quest', 'price' => '7K', 'unit' => 'quest'],
+                    ['name' => 'Side Quest', 'price' => '5K', 'unit' => 'quest'],
+                ]
+            ],
+            'event_content' => [
+                'title' => 'Event Content',
+                'description' => 'Joki Event WuWa Terbaru dan Lama',
+                'image' => 'assets/images/wuwa-event.jpg',
+                'services' => [
+                    ['name' => 'Cube Cubic', 'price' => '25K', 'unit' => 'event'],
+                    ['name' => 'Dreaming Full Reward', 'price' => '30K', 'unit' => 'event'],
+                    ['name' => 'New Event', 'price' => '20K', 'unit' => 'event'],
+                ]
+            ],
+            'other_services' => [
+                'title' => 'Layanan Lainnya',
+                'description' => 'Berbagai Layanan Joki WuWa',
+                'image' => 'assets/images/wuwa-services.jpg',
+                'services' => [
+                    ['name' => 'Sonance Casket', 'price' => '15K', 'unit' => 'service'],
+                    ['name' => 'Buka All Teleport', 'price' => '10K', 'unit' => 'service'],
+                    ['name' => 'Data Bank', 'price' => '20K', 'unit' => 'service'],
+                    ['name' => 'Build Character', 'price' => '50K', 'unit' => 'character'],
                 ]
             ]
         ]
@@ -228,4 +261,3 @@ $site_config = [
         'Kemahalan? Silahkan bisa nego',
     ]
 ];
-?>
