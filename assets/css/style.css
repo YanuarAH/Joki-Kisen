@@ -472,14 +472,14 @@ body {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .saweria-section {
-    padding: 1.5rem 0;
+    padding: 1.25rem 0;
   }
 
   .saweria-banner {
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 1rem;
+    padding: 1.25rem;
     margin: 0 0.75rem;
   }
 
