@@ -1,6 +1,5 @@
 <?php 
 require_once dirname(__DIR__) . '/config/games.php';
-require_once dirname(__DIR__) . '/components/price-list.php';
 $game_id = 'genshin';
 $game = $games[$game_id];
 $current_category = $_GET['category'] ?? 'explore';
@@ -15,8 +14,6 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
     <title><?php echo $page_title; ?></title>
     <meta name="description" content="<?php echo $category['description']; ?> - <?php echo $site_config['site_description']; ?>">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
     <?php include dirname(__DIR__) . '/includes/header.php'; ?>
@@ -32,7 +29,54 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
         
         <main class="game-content">
             <div class="content-wrapper">
-                <?php renderPriceList($category, $game['title']); ?>
+                <!-- Header -->
+                <div class="content-header">
+                    <div class="content-title">
+                        <h1><?php echo $category['title']; ?></h1>
+                        <span class="game-badge"><?php echo $game['title']; ?></span>
+                    </div>
+                    <p class="content-description"><?php echo $category['description']; ?></p>
+                </div>
+
+                <div class="price-list">
+                    <?php foreach ($category['services'] as $service): ?>
+                    <div class="price-card">
+                        <?php 
+                        // KODE BARU: Cek apakah ada gambar untuk layanan ini
+                        if (isset($service['image']) && !empty($service['image'])): 
+                        ?>
+                            <img src="/<?php echo htmlspecialchars($service['image']); ?>" alt="<?php echo htmlspecialchars($service['name']); ?>" class="service-image">
+                        <?php endif; ?>
+                        
+                        <div class="price-info">
+                            <h3 class="service-name"><?php echo htmlspecialchars($service['name']); ?></h3>
+                            <p class="service-unit">Per <?php echo htmlspecialchars($service['unit']); ?></p>
+                        </div>
+                        <div class="price-display">
+                            <div class="price"><?php echo htmlspecialchars($service['price']); ?></div>
+                            <div class="price-unit">/<?php echo htmlspecialchars($service['unit']); ?></div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-card">
+                    <h3>Cara Pemesanan</h3>
+                    <p>Hubungi kami untuk melakukan pemesanan joki</p>
+                    <ul class="contact-list">
+                        <li>• Hubungi melalui WhatsApp atau Discord</li>
+                        <li>• Berikan detail akun dan layanan yang diinginkan</li>
+                        <li>• Pembayaran melalui Dana, GoPay, atau Saweria</li>
+                        <li>• Estimasi pengerjaan 1-3 hari kerja</li>
+                    </ul>
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/<?php echo $site_config['contact']['whatsapp']; ?>" 
+                           target="_blank" class="btn btn-success">WhatsApp</a>
+                        <a href="<?php echo $site_config['contact']['saweria']; ?>" 
+                           target="_blank" class="btn btn-primary">Saweria</a>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
