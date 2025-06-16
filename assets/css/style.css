@@ -520,7 +520,6 @@ body {
   border-radius: var(--radius);
   padding: 1.5rem;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   transition: all 0.2s ease;

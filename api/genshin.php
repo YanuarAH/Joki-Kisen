@@ -2,8 +2,8 @@
 require_once dirname(__DIR__) . '/config/games.php';
 $game_id = 'genshin';
 $game = $games[$game_id];
-$current_category = $_GET['category'] ?? 'explore';
-$category = $game['categories'][$current_category] ?? $game['categories']['explore'];
+$current_category = $_GET['category'] ?? 'explore_full';
+$category = $game['categories'][$current_category] ?? $game['categories']['explore_full'];
 $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config['site_name'];
 ?>
 <!DOCTYPE html>
