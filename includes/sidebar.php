@@ -6,13 +6,11 @@ if (isset($games[$current_game]) && empty($current_category)) {
 }
 ?>
 <aside class="sidebar">
-    <!-- Mobile Sidebar Header -->
     <div class="sidebar-header">
         <h3>Menu</h3>
     </div>
 
     <div class="sidebar-content">
-        <!-- Game Navigation -->
         <div class="sidebar-section">
             <h3 class="sidebar-title">Game List</h3>
             <nav class="sidebar-nav">
@@ -20,33 +18,31 @@ if (isset($games[$current_game]) && empty($current_category)) {
                     <span class="sidebar-icon">🏠</span>
                     Beranda
                 </a>
-                <?php foreach ($games as $game_id => $game): ?>
-                <a href="<?php echo $game_id; ?>.php" 
-                   class="sidebar-link <?php echo $current_game === $game_id ? 'active' : ''; ?>"
+                <?php foreach ($games as $sidebar_game_id => $sidebar_game): ?>
+                <a href="<?php echo $sidebar_game_id; ?>.php" 
+                   class="sidebar-link <?php echo $current_game === $sidebar_game_id ? 'active' : ''; ?>"
                    onclick="handleSidebarLinkClick()">
-                    <?php echo $game['title']; ?>
+                    <?php echo $sidebar_game['title']; ?>
                 </a>
                 <?php endforeach; ?>
             </nav>
         </div>
 
-        <!-- Category Navigation -->
         <?php if (isset($games[$current_game])): ?>
         <div class="sidebar-section">
             <h3 class="sidebar-title">Joki <?php echo $games[$current_game]['title']; ?></h3>
             <nav class="sidebar-nav">
-                <?php foreach ($games[$current_game]['categories'] as $cat_id => $category): ?>
-                <a href="?category=<?php echo $cat_id; ?>" 
-                   class="sidebar-link category-link <?php echo $current_category === $cat_id ? 'active' : ''; ?>"
+                <?php foreach ($games[$current_game]['categories'] as $sidebar_cat_id => $sidebar_category): ?>
+                <a href="?category=<?php echo $sidebar_cat_id; ?>" 
+                   class="sidebar-link category-link <?php echo $current_category === $sidebar_cat_id ? 'active' : ''; ?>"
                    onclick="handleSidebarLinkClick()">
-                    <?php echo $category['title']; ?>
+                    <?php echo $sidebar_category['title']; ?>
                 </a>
                 <?php endforeach; ?>
             </nav>
         </div>
         <?php endif; ?>
 
-        <!-- Footer -->
         <div class="sidebar-footer">
             <p>&copy; 2025 Joki Epsi</p>
         </div>
