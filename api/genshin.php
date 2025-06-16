@@ -1,5 +1,6 @@
 <?php 
 require_once dirname(__DIR__) . '/config/games.php';
+require_once dirname(__DIR__) . '/components/price-list.php';
 $game_id = 'genshin';
 $game = $games[$game_id];
 $current_category = $_GET['category'] ?? 'explore';
