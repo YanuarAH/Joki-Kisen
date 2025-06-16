@@ -1,5 +1,5 @@
 <?php 
-require_once 'config/games.php';
+require_once '../config/games.php';
 $page_title = 'Beranda - ' . $site_config['site_name'];
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include '../includes/header.php'; ?>
     
     <main class="main-content">
 
