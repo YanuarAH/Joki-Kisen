@@ -506,10 +506,7 @@ body {
   }
 
   .saweria-subtitle {
-    font-size: 0.8rem; /* Lebih kecil agar muat */
-    line-height: 1.2;
-    margin: 0;
-    opacity: 0.9;
+    display: none;
   }
 
   .saweria-action {
@@ -557,7 +554,7 @@ body {
   }
 
   .saweria-subtitle {
-    font-size: 0.75rem;
+    display: none;
   }
 
   .btn-saweria {
