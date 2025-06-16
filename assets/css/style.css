@@ -520,6 +520,7 @@ body {
   border-radius: var(--radius);
   padding: 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   transition: all 0.2s ease;
@@ -539,6 +540,15 @@ body {
 .service-unit {
   font-size: 0.875rem;
   color: var(--text-secondary);
+}
+
+.service-image {
+    width: 200px;
+    height: 150px; /* Anda bisa sesuaikan tinggi gambar */
+    object-fit: cover; /* Membuat gambar tidak gepeng */
+    border-radius: var(--radius);
+    margin-bottom: 1rem; /* Memberi jarak ke konten di bawahnya */
+    border: 1px solid var(--border);
 }
 
 .price-display {
