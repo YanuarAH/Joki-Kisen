@@ -1,8 +1,6 @@
 <?php 
-require_once dirname(dirname(__DIR__)) . '/config/games.php';
-include dirname(dirname(__DIR__)) . '/includes/header.php';
-include dirname(dirname(__DIR__)) . '/includes/sidebar.php';
-$game_id = 'hsr';
+require_once dirname(__DIR__) . '/config/games.php';
+$game_id = 'wuwa';
 $game = $games[$game_id];
 $current_category = $_GET['category'] ?? 'story';
 $category = $game['categories'][$current_category] ?? $game['categories']['story'];
@@ -18,7 +16,7 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <?php include dirname(dirname(__DIR__)) . '/includes/header.php'; ?>
+    <?php include dirname(__DIR__) . '/includes/header.php'; ?>
     
     <div class="game-layout">
         <div class="mobile-header">
