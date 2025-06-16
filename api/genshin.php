@@ -42,7 +42,7 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
                     <?php foreach ($category['services'] as $service): ?>
                     <div class="price-card">
                         <?php 
-                        // KODE BARU: Cek apakah ada gambar untuk layanan ini
+                        // Cek untuk gambar opsional
                         if (isset($service['image']) && !empty($service['image'])): 
                         ?>
                             <img src="/<?php echo htmlspecialchars($service['image']); ?>" alt="<?php echo htmlspecialchars($service['name']); ?>" class="service-image">
@@ -50,11 +50,22 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
                         
                         <div class="price-info">
                             <h3 class="service-name"><?php echo htmlspecialchars($service['name']); ?></h3>
-                            <p class="service-unit">Per <?php echo htmlspecialchars($service['unit']); ?></p>
+                            <?php 
+                            // KODE BARU: Cek apakah ada data 'unit' sebelum ditampilkan
+                            if (isset($service['unit']) && !empty($service['unit'])): 
+                            ?>
+                                <p class="service-unit">Per <?php echo htmlspecialchars($service['unit']); ?></p>
+                            <?php endif; ?>
                         </div>
+
                         <div class="price-display">
                             <div class="price"><?php echo htmlspecialchars($service['price']); ?></div>
-                            <div class="price-unit">/<?php echo htmlspecialchars($service['unit']); ?></div>
+                            <?php 
+                            // KODE BARU: Cek juga di sini untuk 'unit' di sebelah harga
+                            if (isset($service['unit']) && !empty($service['unit'])): 
+                            ?>
+                                <div class="price-unit">/<?php echo htmlspecialchars($service['unit']); ?></div>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <?php endforeach; ?>

@@ -10,7 +10,7 @@ $games = [
                 'description' => 'Joki Explore 100% Map + Free Oculus',
                 'image' => 'assets/images/genshin-explore.jpg',
                 'services' => [
-                    ['name' => 'Mondstadt', 'price' => '15K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/Mondstadt.jpg'],
+                    ['name' => 'Mondstadt', 'price' => '15K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/map/mondstadt.jpg'],
                     ['name' => 'Dragonspine', 'price' => '40K', 'image' => 'assets/images/genshin/map/dragonspine.jpg'],
                     ['name' => 'Liyue', 'price' => '20K', 'unit' => 'wilayah'],
                     ['name' => 'Chenju Valley', 'price' => '25K', 'unit' => 'wilayah'],
