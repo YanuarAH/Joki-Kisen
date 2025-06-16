@@ -522,12 +522,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap; /* PENTING: Mengizinkan item turun ke baris baru */
   transition: all 0.2s ease;
 }
 
 .price-card:hover {
   box-shadow: var(--shadow);
-  transform: translateY(-1px);
+}
+
+.price-info {
+    flex-grow: 1;
 }
 
 .price-info h3 {
