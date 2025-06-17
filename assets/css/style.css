@@ -1150,7 +1150,7 @@ body {
 
   /* Games Grid Mobile */
   .games-section {
-    padding: 1.5rem 0 2rem;
+    padding: 1.5rem 0 4rem;
   }
 
   .section-title {
@@ -1167,6 +1167,7 @@ body {
     border-radius: 12px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .game-title {
