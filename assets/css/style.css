@@ -1165,6 +1165,8 @@ body {
 
   .game-card {
     border-radius: 12px;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .game-title {
