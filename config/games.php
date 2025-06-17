@@ -81,7 +81,7 @@ $games = [
             'endgame_content' => [
                 'title' => 'End Game Content',
                 'description' => 'Joki End Game HSR - Pengerjaan Manual',
-                'image' => 'assets/images/hsr-endgame.jpg',
+                'image' => 'assets/images/hsr/endgame/APOCALPSE.jpeg',
                 'services' => [
                     ['name' => 'PF (Pure Fiction)', 'price' => '20K', 'image' => 'assets/images/hsr/endgame/PF.jpeg'],
                     ['name' => 'MOC (Memory Of Chaos)', 'price' => '20K', 'image' => 'assets/images/hsr/endgame/MOC.jpeg'],
@@ -92,7 +92,7 @@ $games = [
             'rawat_akun' => [
                 'title' => 'Rawat Akun 🛠',
                 'description' => 'Layanan Rawat Akun HSR Profesional',
-                'image' => 'assets/images/hsr-maintenance.jpg',
+                'image' => 'assets/images//hsr/daily.jpg',
                 'services' => [
                     ['name' => 'Daily', 'price' => '3K', 'unit' => 'hari'],
                     ['name' => 'Weekly', 'price' => '25K', 'unit' => 'minggu'],
@@ -103,7 +103,7 @@ $games = [
             'explore_map' => [
                 'title' => 'Explore Map 🗺',
                 'description' => 'Joki Explore Semua Map HSR + Puzzle',
-                'image' => 'assets/images/hsr-explore.jpg',
+                'image' => 'assets/images/hsr/map/belobog.jpeg',
                 'services' => [
                     ['name' => 'All Amphoreus (inc Nymph + All Puzzle)', 'price' => '70K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/Amorpheus.jpeg'],
                     ['name' => 'All Xianzhou (inc All Puzzle)', 'price' => '40K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/xianzhou.jpeg'],
@@ -115,7 +115,7 @@ $games = [
             'story_quest' => [
                 'title' => 'Quest Story 🟡',
                 'description' => 'Ready Buat Story Quest Terbaru 👍🏻',
-                'image' => 'assets/images/hsr-story.jpg',
+                'image' => 'assets/images/hsr/story/xianzhou.jpeg',
                 'services' => [
                     ['name' => 'Space Herta', 'price' => '20K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Herta-station.jpg'],
                     ['name' => 'Belobog', 'price' => '25K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Belobog.jpeg'],
@@ -127,7 +127,7 @@ $games = [
             'other_quest' => [
                 'title' => 'Quest Lainnya',
                 'description' => 'Berbagai Jenis Quest HSR',
-                'image' => 'assets/images/hsr-other-quest.jpg',
+                'image' => 'assets/images/hsr/other.jpg',
                 'services' => [
                     ['name' => 'Quest Lanjutan 🟠', 'price' => '10K', 'unit' => 'quest'],
                     ['name' => 'Quest Ungu 🟣', 'price' => '3K', 'unit' => 'quest'],
@@ -137,16 +137,16 @@ $games = [
             'event' => [
                 'title' => 'Event New & Nostalgia 🔔',
                 'description' => 'Joki Event HSR Terbaru dan Lama',
-                'image' => 'assets/images/hsr-event.jpg',
+                'image' => 'assets/images/hsr/event/EventKecilMerge.jpg',
                 'services' => [
-                    ['name' => 'Event Kecil', 'price' => '10K', 'unit' => 'event'],
-                    ['name' => 'Event Besar', 'price' => '30K', 'unit' => 'event'],
+                    ['name' => 'Event Kecil', 'price' => '10K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/Event-Kecil.jpg'],
+                    ['name' => 'Event Besar', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/bigevent-merged.jpg'],
                 ]
             ],
             'leveling_world' => [
                 'title' => 'Leveling World',
                 'description' => 'Joki Leveling dan Simulated Universe',
-                'image' => 'assets/images/hsr-leveling.jpg',
+                'image' => 'assets/images/hsr/world/Zona-Rahasia.jpeg',
                 'services' => [
                     ['name' => 'Patung Clockie', 'price' => '3K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/clockie.jpeg'],
                     ['name' => 'Swarm Disaster', 'price' => '60K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/swarm.jpg'],
@@ -190,7 +190,7 @@ $games = [
             'rawat_akun' => [
                 'title' => 'Rawat Akun',
                 'description' => 'Layanan Rawat Akun WuWa Profesional - Pengerjaan Manual 100%',
-                'image' => 'assets/images/wuwa-maintenance.jpg',
+                'image' => 'assets/images/wuwa/daily.jpg',
                 'services' => [
                     ['name' => 'Harian', 'price' => '3K', 'unit' => 'hari'],
                     ['name' => 'Mingguan', 'price' => '60K', 'unit' => 'minggu'],
@@ -201,39 +201,39 @@ $games = [
             'explore_map' => [
                 'title' => 'Explore All Map',
                 'description' => 'Joki Explore Semua Map WuWa - 100% Manual',
-                'image' => 'assets/images/wuwa-explore.jpg',
+                'image' => 'assets/images/wuwa/map/septimont.jpg',
                 'services' => [
-                    ['name' => 'Huanglong', 'price' => '200K', 'unit' => 'wilayah'],
-                    ['name' => 'Rinascita', 'price' => '150K', 'unit' => 'wilayah'],
-                    ['name' => 'BlackShores', 'price' => '60K', 'unit' => 'wilayah'],
-                    ['name' => 'Septimont', 'price' => '50K', 'unit' => 'wilayah'],
+                    ['name' => 'Huanglong', 'price' => '200K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/huanglong.jpg'],
+                    ['name' => 'Rinascita', 'price' => '150K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/rinascita.jpg'],
+                    ['name' => 'BlackShores', 'price' => '60K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/blackshores.jpg'],
+                    ['name' => 'Septimont', 'price' => '50K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/septimont.jpg'],
                 ]
             ],
             'all_quest' => [
                 'title' => 'All Quest',
                 'description' => 'Joki Semua Jenis Quest WuWa',
-                'image' => 'assets/images/wuwa-quest.jpg',
+                'image' => 'assets/images/wuwa/quest/quest.jpg',
                 'services' => [
-                    ['name' => 'Main Quest', 'price' => '10K', 'unit' => 'act'],
-                    ['name' => 'Exploration Quest', 'price' => '8K', 'unit' => 'quest'],
+                    ['name' => 'Main Quest', 'price' => '10K', 'unit' => 'act', 'image' => 'assets/images/wuwa/quest/main.png'],
+                    ['name' => 'Exploration Quest', 'price' => '8K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/explor.png'],
                     ['name' => 'Companion Quest', 'price' => '7K', 'unit' => 'quest'],
-                    ['name' => 'Side Quest', 'price' => '5K', 'unit' => 'quest'],
+                    ['name' => 'Side Quest', 'price' => '5K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/side.png'],
                 ]
             ],
             'event_content' => [
                 'title' => 'Event Content',
                 'description' => 'Joki Event WuWa Terbaru dan Lama',
-                'image' => 'assets/images/wuwa-event.jpg',
+                'image' => 'assets/images/wuwa/event/dreaming.jpg',
                 'services' => [
-                    ['name' => 'Cube Cubic', 'price' => '25K', 'unit' => 'event'],
-                    ['name' => 'Dreaming Full Reward', 'price' => '30K', 'unit' => 'event'],
+                    ['name' => 'Cube Cubic', 'price' => '25K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/cube.jpg'],
+                    ['name' => 'Dreaming Full Reward', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/dreaming.jpg'],
                     ['name' => 'New Event', 'price' => '20K', 'unit' => 'event'],
                 ]
             ],
             'other_services' => [
                 'title' => 'Layanan Lainnya',
                 'description' => 'Berbagai Layanan Joki WuWa',
-                'image' => 'assets/images/wuwa-services.jpg',
+                'image' => 'assets/images/wuwa/other.jpg',
                 'services' => [
                     ['name' => 'Sonance Casket', 'price' => '15K', 'unit' => 'service'],
                     ['name' => 'Buka All Teleport', 'price' => '10K', 'unit' => 'service'],
