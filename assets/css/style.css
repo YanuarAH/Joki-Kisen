@@ -1160,11 +1160,12 @@ body {
 
   .games-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2.5rem;
   }
 
   .game-card {
     border-radius: 12px;
+    margin-bottom: 0.5rem;
   }
 
   .game-title {
