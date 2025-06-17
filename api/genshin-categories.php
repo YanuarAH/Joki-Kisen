@@ -1,6 +1,6 @@
 <?php 
 require_once dirname(__DIR__) . '/config/games.php';
-$game_id = 'genshin ';
+$game_id = 'genshin';
 $game = $games[$game_id];
 $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'];
 ?>

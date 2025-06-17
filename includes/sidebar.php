@@ -1,83 +1,71 @@
 <?php
-$current_page = basename($_SERVER['PHP_SELF'], '.php');
-$is_categories_page = strpos($current_page, '-categories') !== false;
+// Mendapatkan nama file dasar, contoh: 'genshin-categories' atau 'genshin'
+$current_page_base = basename($_SERVER['PHP_SELF'], '.php');
 
-if ($is_categories_page) {
-    // Extract game ID from categories page
-    $current_game = str_replace('-categories', '', $current_page);
-    $current_category = '';
-} else {
-    $current_game = $current_page;
-    $current_category = $_GET['category'] ?? '';
-    if (isset($games[$current_game]) && empty($current_category)) {
-        $current_category = array_keys($games[$current_game]['categories'])[0];
-    }
+// BARU: Logika untuk mendeteksi game aktif dengan benar, bahkan di halaman kategori.
+// Ini akan mengambil bagian pertama sebelum tanda '-' (jika ada).
+// 'genshin-categories' -> 'genshin'
+// 'genshin' -> 'genshin'
+$game_id_from_page = explode('-', $current_page_base)[0];
+
+// Mendapatkan kategori dari URL
+$current_category = $_GET['category'] ?? '';
+
+// BARU: Menentukan apakah halaman saat ini adalah beranda
+$is_homepage = ($current_page_base === 'index');
+
+// Jika kita berada di halaman game dan belum ada kategori yang dipilih, set default kategori pertama
+if (isset($games[$game_id_from_page]) && empty($current_category)) {
+    // Menggunakan array_key_first untuk cara yang lebih modern (membutuhkan PHP 7.3+)
+    // atau array_keys(...)[0] untuk kompatibilitas yang lebih luas.
+    $current_category = array_key_first($games[$game_id_from_page]['categories']);
 }
 ?>
 <aside class="sidebar">
-    <!-- Mobile Sidebar Header -->
     <div class="sidebar-header">
-        <h3>Menu</h3>
-        <button class="sidebar-close-btn" onclick="closeSidebar()" aria-label="Close menu">
-            ✕
-        </button>
+        <button class="sidebar-close-btn" onclick="toggleSidebar()">×</button>
+        <h3>Navigasi</h3>
     </div>
 
     <div class="sidebar-content">
-        <!-- Back Navigation -->
-        <?php if ($is_categories_page): ?>
-        <div class="sidebar-section">
-            <a href="../index.php" class="back-home-btn">
-                <span class="back-icon">←</span>
-                <span>Kembali ke Beranda</span>
-            </a>
-        </div>
-        <?php else: ?>
-        <div class="sidebar-section">
-            <a href="<?php echo $current_game; ?>-categories.php" class="back-categories-btn">
-                <span class="back-icon">←</span>
-                <span>Kembali ke Kategori</span>
-            </a>
-        </div>
-        <?php endif; ?>
-
-        <!-- Game Navigation -->
-        <div class="sidebar-section">
-            <h3 class="sidebar-title">Game List</h3>
-            <nav class="sidebar-nav">
-                <a href="<?php echo $is_categories_page ? '../' : '../'; ?>index.php" class="sidebar-link" onclick="handleSidebarLinkClick()">
-                    <span class="sidebar-icon">🏠</span>
-                    Beranda
+        <nav class="sidebar-section">
+            <h3 class="sidebar-title">Menu Utama</h3>
+            <div class="sidebar-nav">
+                <a href="/" class="sidebar-link <?php echo $is_homepage ? 'active' : ''; ?>">
+                    🏠 Beranda
                 </a>
-                <?php foreach ($games as $game_id => $game): ?>
-                <a href="<?php echo $game_id; ?><?php echo $is_categories_page ? '-categories' : '-categories'; ?>.php" 
-                   class="sidebar-link <?php echo $current_game === $game_id ? 'active' : ''; ?>"
-                   onclick="handleSidebarLinkClick()">
-                    <?php echo $game['title']; ?>
+            </div>
+        </nav>
+
+        <nav class="sidebar-section">
+            <h3 class="sidebar-title">Daftar Game</h3>
+            <div class="sidebar-nav">
+                <?php foreach ($games as $sidebar_game_id => $sidebar_game): ?>
+                <a href="/games/<?php echo htmlspecialchars($sidebar_game_id); ?>-categories.php" 
+                   class="sidebar-link <?php echo $game_id_from_page === $sidebar_game_id ? 'active' : ''; ?>">
+                    <?php echo htmlspecialchars($sidebar_game['title']); ?>
                 </a>
                 <?php endforeach; ?>
-            </nav>
-        </div>
+            </div>
+        </nav>
 
-        <!-- Category Navigation (only show on detail pages) -->
-        <?php if (!$is_categories_page && isset($games[$current_game])): ?>
-        <div class="sidebar-section">
-            <h3 class="sidebar-title">Joki <?php echo $games[$current_game]['title']; ?></h3>
-            <nav class="sidebar-nav">
-                <?php foreach ($games[$current_game]['categories'] as $cat_id => $category): ?>
-                <a href="?category=<?php echo $cat_id; ?>" 
-                   class="sidebar-link category-link <?php echo $current_category === $cat_id ? 'active' : ''; ?>"
-                   onclick="handleSidebarLinkClick()">
-                    <?php echo $category['title']; ?>
+        <?php if (isset($games[$game_id_from_page])): ?>
+        <nav class="sidebar-section">
+            <h3 class="sidebar-title">Layanan <?php echo htmlspecialchars($games[$game_id_from_page]['title']); ?></h3>
+            <div class="sidebar-nav">
+                <?php foreach ($games[$game_id_from_page]['categories'] as $sidebar_cat_id => $sidebar_category): ?>
+                <a href="/games/<?php echo htmlspecialchars($game_id_from_page); ?>.php?category=<?php echo htmlspecialchars($sidebar_cat_id); ?>" 
+                   class="sidebar-link category-link <?php echo $current_category === $sidebar_cat_id ? 'active' : ''; ?>">
+                    <?php echo htmlspecialchars($sidebar_category['title']); ?>
                 </a>
                 <?php endforeach; ?>
-            </nav>
-        </div>
+            </div>
+        </nav>
         <?php endif; ?>
-
-        <!-- Footer -->
-        <div class="sidebar-footer">
-            <p>&copy; 2025 Joki Epsi</p>
-        </div>
+    </div>
+    
+    <div class="sidebar-footer">
+        <p>&copy; <?php echo date("Y"); ?> Joki Epsi. All Rights Reserved.</p>
     </div>
 </aside>
+<div class="sidebar-overlay" onclick="toggleSidebar()"></div>
