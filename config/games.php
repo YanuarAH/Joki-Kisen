@@ -165,17 +165,29 @@ $games = [
             'story' => [
                 'title' => 'Story Mode',
                 'description' => 'Joki ZZZ Story',
-                'image' => 'assets/images/zzz-story.jpg',
+                'image' => 'assets/images/zzz/quest.jpg',
                 'services' => [
-                    ['name' => 'Main Story', 'price' => '60K', 'unit' => 'chapter'],
-                    ['name' => 'Agent Story', 'price' => '25K', 'unit' => 'quest'],
-                    ['name' => 'Side Quest', 'price' => '15K', 'unit' => 'quest'],
+                    ['name' => 'Special Episode:: Virtual Revenge + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
+                    ['name' => 'S1 Chapter 5 : A Storm of Falling Stars + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
+                    ['name' => 'Special Episode : Astra-nomical Moment + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
+                    ['name' => 'S1 Epilog: Bury Your Tears With the Past (A) + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
+                    ['name' => 'S1 Epilog: Bury Your Tears With the Past (B) + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
+                    ['name' => 'S2 Chapter 1: Where Clouds Embrace the Dawn', 'price' => '20K', 'unit' => 'Story'],
+                ]
+            ],
+            'event' => [
+                'title' => 'Event',
+                'description' => 'Joki Event Zenless Zone Zero',
+                'image' => 'assets/images/zzz/event.png',
+                'services' => [
+                    ['name' => 'Overlord\'s Feast', 'price' => '15K', 'unit' => 'Event'],
+                    ['name' => 'The Mystery of Arpeggio Fault', 'price' => '35K', 'unit' => 'Event'],
                 ]
             ],
             'endgame' => [
                 'title' => 'End Game',
                 'description' => 'Joki ZZZ End Game',
-                'image' => 'assets/images/zzz-endgame.jpg',
+                'image' => 'assets/images/zzz/endgame.jpg',
                 'services' => [
                     ['name' => 'Shiyu Defense', 'price' => '80K', 'unit' => 'S rank'],
                     ['name' => 'Hollow Zero', 'price' => '40K', 'unit' => 'clear'],
