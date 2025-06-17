@@ -14,8 +14,12 @@ $current_category = $_GET['category'] ?? '';
 // BARU: Menentukan apakah halaman saat ini adalah beranda
 $is_homepage = ($current_page_base === 'index');
 
-// Jika kita berada di halaman game dan belum ada kategori yang dipilih, set default kategori pertama
-if (isset($games[$game_id_from_page]) && empty($current_category)) {
+// Jika kita berada di halaman game, belum ada kategori yang dipilih, DAN BUKAN halaman kategori, set default
+if (
+    isset($games[$game_id_from_page]) && 
+    empty($current_category) && 
+    strpos($current_page_base, '-categories') === false
+) {
     // Menggunakan array_key_first untuk cara yang lebih modern (membutuhkan PHP 7.3+)
     // atau array_keys(...)[0] untuk kompatibilitas yang lebih luas.
     $current_category = array_key_first($games[$game_id_from_page]['categories']);
