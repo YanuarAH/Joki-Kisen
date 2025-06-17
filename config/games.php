@@ -95,9 +95,9 @@ $games = [
                 'image' => 'assets/images//hsr/daily.jpg',
                 'services' => [
                     ['name' => 'Daily', 'price' => '3K', 'unit' => 'hari'],
-                    ['name' => 'Weekly', 'price' => '25K', 'unit' => 'minggu'],
-                    ['name' => 'Monthly', 'price' => '40K', 'unit' => 'bulan'],
-                    ['name' => '1 Patch', 'price' => '120K', 'unit' => 'patch'],
+                    ['name' => 'Weekly (SU)', 'price' => '25K', 'unit' => 'minggu'],
+                    ['name' => 'Monthly (1 End game konten+ SU)', 'price' => '70K', 'unit' => 'bulan'],
+                    ['name' => '1 Patch  (All end game konten + SU)', 'price' => '120K', 'unit' => 'patch'],
                 ]
             ],
             'explore_map' => [
@@ -105,9 +105,9 @@ $games = [
                 'description' => 'Joki Explore Semua Map HSR + Puzzle',
                 'image' => 'assets/images/hsr/map/belobog.jpeg',
                 'services' => [
-                    ['name' => 'All Amphoreus (inc Nymph + All Puzzle)', 'price' => '70K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/Amorpheus.jpeg'],
+                    ['name' => 'All Amphoreus (inc Nymph + All Puzzle)', 'price' => '75K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/Amorpheus.jpeg'],
                     ['name' => 'All Xianzhou (inc All Puzzle)', 'price' => '40K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/xianzhou.jpeg'],
-                    ['name' => 'All Belobog (inc All Puzzle)', 'price' => '20K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/belobog.jpeg'],
+                    ['name' => 'All Belobog (inc All Puzzle)', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/belobog.jpeg'],
                     ['name' => 'All Space Herta (inc All Puzzle)', 'price' => '20K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/herta-spacestation.jpeg'],
                     ['name' => 'All Penacony (inc Sticker + Bird + Puzzle)', 'price' => '160K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/penacony.jpeg'],
                 ]
@@ -118,10 +118,10 @@ $games = [
                 'image' => 'assets/images/hsr/story/xianzhou.jpeg',
                 'services' => [
                     ['name' => 'Space Herta', 'price' => '20K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Herta-station.jpg'],
-                    ['name' => 'Belobog', 'price' => '25K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Belobog.jpeg'],
-                    ['name' => 'Luofu', 'price' => '40K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/xianzhou.jpeg'],
-                    ['name' => 'Penacony', 'price' => '70K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Penacony.jpg'],
-                    ['name' => 'Ampho 3.0 - 3.3', 'price' => '60K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Amphoreus.jpg'],
+                    ['name' => 'Belobog', 'price' => '35K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Belobog.jpeg'],
+                    ['name' => 'Luofu', 'price' => '60K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/xianzhou.jpeg'],
+                    ['name' => 'Penacony', 'price' => '120K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Penacony.jpg'],
+                    ['name' => 'Ampho 3.0 - 3.3', 'price' => '110K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Amphoreus.jpg'],
                 ]
             ],
             'other_quest' => [
@@ -129,9 +129,9 @@ $games = [
                 'description' => 'Berbagai Jenis Quest HSR',
                 'image' => 'assets/images/hsr/other.jpg',
                 'services' => [
-                    ['name' => 'Quest Lanjutan 🟠', 'price' => '10K', 'unit' => 'quest'],
-                    ['name' => 'Quest Ungu 🟣', 'price' => '3K', 'unit' => 'quest'],
-                    ['name' => 'Quest Biru 🔵', 'price' => '2K', 'unit' => 'quest'],
+                    ['name' => 'Quest Lanjutan 🟠', 'price' => '20K', 'unit' => 'quest'],
+                    ['name' => 'Quest Ungu 🟣', 'price' => '12K', 'unit' => 'quest'],
+                    ['name' => 'Quest Biru 🔵', 'price' => '4K', 'unit' => 'quest'],
                 ]
             ],
             'event' => [
@@ -139,8 +139,8 @@ $games = [
                 'description' => 'Joki Event HSR Terbaru dan Lama',
                 'image' => 'assets/images/hsr/event/EventKecilMerge.jpg',
                 'services' => [
-                    ['name' => 'Event Kecil', 'price' => '10K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/Event-Kecil.jpg'],
-                    ['name' => 'Event Besar', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/bigevent-merged.jpg'],
+                    ['name' => 'Event Kecil', 'price' => '10-15K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/Event-Kecil.jpg'],
+                    ['name' => 'Event Besar', 'price' => '25K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/bigevent-merged.jpg'],
                 ]
             ],
             'leveling_world' => [
@@ -148,11 +148,11 @@ $games = [
                 'description' => 'Joki Leveling dan Simulated Universe',
                 'image' => 'assets/images/hsr/world/Zona-Rahasia.jpeg',
                 'services' => [
-                    ['name' => 'Patung Clockie', 'price' => '3K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/clockie.jpeg'],
-                    ['name' => 'Swarm Disaster', 'price' => '60K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/swarm.jpg'],
-                    ['name' => 'Gold and Gears', 'price' => '60K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/GnG.jpeg'],
-                    ['name' => 'Zona Rahasia', 'price' => '50K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/Zona-Rahasia.jpeg'],
-                    ['name' => 'Divergent Universe (Per Level)', 'price' => '1K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/DU.jpeg'],
+                    ['name' => 'Patung Clockie', 'price' => '4K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/clockie.jpeg'],
+                    ['name' => 'Swarm Disaster', 'price' => '70K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/swarm.jpg'],
+                    ['name' => 'Gold and Gears', 'price' => '85K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/GnG.jpeg'],
+                    ['name' => 'Zona Rahasia', 'price' => '75K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/Zona-Rahasia.jpeg'],
+                    ['name' => 'Divergent Universe (Per Level)', 'price' => '2K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/DU.jpeg'],
                     ['name' => 'Divergent Universe (MAX)', 'price' => '80K', 'unit' => 'max clear', 'image' => 'assets/images/hsr/world/DU.jpeg'],
                 ]
             ]
