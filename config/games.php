@@ -18,7 +18,7 @@ $games = [
                     ['name' => 'Chasm Atas', 'price' => '25K', 'image' => 'assets/images/genshin/area/chasm_atas.jpg'],
                     ['name' => 'Chasm Bawah', 'price' => '35K', 'image' => 'assets/images/genshin/area/chasm_bawah.jpg'],
                     ['name' => 'Inazuma', 'price' => '30K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/inazuma.jpg'],
-                    ['name' => 'Enkanomiya', 'price' => '50K', 'image' => 'assets/images/genshin/area/enkanomiya.png'],
+                    ['name' => 'Enkanomiya', 'price' => '50K', 'image' => 'assets/images/genshin/area/enkanomiya.jpg'],
                     ['name' => 'Sumeru Hutan', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/sumeru.jpg'],
                     ['name' => 'Sumeru Desert', 'price' => '35K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/sumeru_pasir.jpg'],
                     ['name' => 'Fontaine', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/fontaine.jpg'],
