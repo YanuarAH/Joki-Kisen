@@ -93,7 +93,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                 <h2 class="section-title">All Games</h2>
                 <div class="games-grid">
                     <?php foreach ($games as $game_id => $game): ?>
-                    <a href="games/<?php echo $game_id; ?>.php" class="game-card">
+                    <a href="games/<?php echo $game_id; ?>-categories.php" class="game-card">
                         <div class="game-image">
                             <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" 
                                  onerror="this.src='assets/images/placeholder.jpg'">
