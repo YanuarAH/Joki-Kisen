@@ -56,7 +56,7 @@ $games = [
                     ['name' => 'Quest Archon', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/genshin/quest/archon.jpg'],
                     ['name' => 'Quest Karakter', 'price' => '20K', 'unit' => 'karakter', 'image' => 'assets/images/genshin/quest/char.jpg'],
                     ['name' => 'Quest Dunia (No Chapter)', 'price' => '15K', 'unit' => 'quest', 'image' => 'assets/images/genshin/quest/world.jpg'],
-                    ['name' => 'Quest Dunia (Per Chapter)', 'price' => '5K', 'unit' => 'chapter', 'image' => 'assets/images/genshin/quest/world_2 .jpg'],
+                    ['name' => 'Quest Dunia (Per Chapter)', 'price' => '5K', 'unit' => 'chapter', 'image' => 'assets/images/genshin/quest/world_2.jpg'],
                 ]
             ],
             'services' => [
