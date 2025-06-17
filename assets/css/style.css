@@ -1161,6 +1161,7 @@ body {
   .games-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    margin: 3rem;
   }
 
   .game-card {
