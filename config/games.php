@@ -120,7 +120,7 @@ $games = [
                     ['name' => 'Space Herta', 'price' => '20K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Herta-station.jpg'],
                     ['name' => 'Belobog', 'price' => '25K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Belobog.jpeg'],
                     ['name' => 'Luofu', 'price' => '40K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/xianzhou.jpeg'],
-                    ['name' => 'Penacony', 'price' => '70K', 'unit' => 'story', 'image' => 'assets/images/story/story/Penacony.jpg'],
+                    ['name' => 'Penacony', 'price' => '70K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Penacony.jpg'],
                     ['name' => 'Ampho 3.0 - 3.3', 'price' => '60K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Amphoreus.jpg'],
                 ]
             ],
