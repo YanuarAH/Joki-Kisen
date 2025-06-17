@@ -22,7 +22,6 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
         <!-- Mobile Header -->                                                      
         <div class="mobile-header">
             <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-            <h1><?php echo $game['title']; ?></h1>
         </div>
 
         <?php include dirname(__DIR__) . '/includes/sidebar.php'; ?>

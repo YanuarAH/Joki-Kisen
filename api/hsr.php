@@ -21,7 +21,6 @@ $page_title = $game['title'] . ' - ' . $category['title'] . ' - ' . $site_config
     <div class="game-layout">
         <div class="mobile-header">
             <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-            <h1><?php echo $game['title']; ?></h1>
         </div>
 
         <?php include dirname(__DIR__) . '/includes/sidebar.php'; ?>

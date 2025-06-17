@@ -8,7 +8,7 @@ $games = [
             'explore_full' => [
                 'title' => 'Explore 100% Map',
                 'description' => 'Joki Explore 100% Map + Free Oculus',
-                'image' => 'assets/images/genshin-explore.jpg',
+                'image' => 'assets/images/genshin/area/ancient.jpg',
                 'services' => [
                     ['name' => 'Mondstadt', 'price' => '15K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/moondstat.jpg'],
                     ['name' => 'Dragonspine', 'price' => '40K', 'image' => 'assets/images/genshin/area/dragonspine.jpg'],
@@ -30,7 +30,7 @@ $games = [
             'explore_percent' => [
                 'title' => 'Explore Per 1%',
                 'description' => 'Joki Explore Per 1% Map + Free Oculus',
-                'image' => 'assets/images/genshin-percent.jpg',
+                'image' => 'assets/images/genshin/map/chasm.jpg',
                 'services' => [
                     ['name' => 'Mondstadt', 'price' => '150', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/Mondstadt.jpg'],
                     ['name' => 'Dragonspine', 'price' => '400', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/dragonspine.jpg'],
@@ -51,7 +51,7 @@ $games = [
             'quest' => [
                 'title' => 'All Quest',
                 'description' => 'Joki Semua Jenis Quest Genshin Impact',
-                'image' => 'assets/images/genshin-quest.jpg',
+                'image' => 'assets/images/genshin/quest/char.jpg',
                 'services' => [
                     ['name' => 'Quest Archon', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/genshin/quest/archon.jpg'],
                     ['name' => 'Quest Karakter', 'price' => '20K', 'unit' => 'karakter', 'image' => 'assets/images/genshin/quest/char.jpg'],
@@ -62,7 +62,7 @@ $games = [
             'services' => [
                 'title' => 'Layanan Lainnya',
                 'description' => 'Berbagai Layanan Joki Genshin Impact',
-                'image' => 'assets/images/genshin-services.jpg',
+                'image' => 'assets/images/genshin/lainnya.png',
                 'services' => [
                     ['name' => 'Open Teleport', 'price' => '1K', 'unit' => 'teleport'],
                     ['name' => 'Mancing R5 Weapon', 'price' => '35K', 'unit' => 'weapon'],

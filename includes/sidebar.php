@@ -23,7 +23,6 @@ if (isset($games[$game_id_from_page]) && empty($current_category)) {
 ?>
 <aside class="sidebar">
     <div class="sidebar-header">
-        <button class="sidebar-close-btn" onclick="toggleSidebar()">×</button>
         <h3>Navigasi</h3>
     </div>
 
