@@ -12,8 +12,8 @@ $games = [
                 'services' => [
                     ['name' => 'Mondstadt', 'price' => '15K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/moondstat.jpg'],
                     ['name' => 'Dragonspine', 'price' => '40K', 'image' => 'assets/images/genshin/area/dragonspine.jpg'],
-                    ['name' => 'Liyue', 'price' => '20K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/liyue.png'],
-                    ['name' => 'Chenju Valley', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/chenju.png'],
+                    ['name' => 'Liyue', 'price' => '20K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/liyue.jpg'],
+                    ['name' => 'Chenju Valley', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/genshin/area/chenju.jpg'],
                     ['name' => 'Chasm (Atas + Bawah)', 'price' => '60K', 'image' => 'assets/images/genshin/area/chasm.jpg'],
                     ['name' => 'Chasm Atas', 'price' => '25K', 'image' => 'assets/images/genshin/area/chasm_atas.jpg'],
                     ['name' => 'Chasm Bawah', 'price' => '35K', 'image' => 'assets/images/genshin/area/chasm_bawah.jpg'],
