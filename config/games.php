@@ -29,24 +29,25 @@ $games = [
             ],
             'explore_percent' => [
                 'title' => 'Explore Per 1%',
-                'description' => 'Joki Explore Per 1% Map + Free Oculus',
+                'description' => 'Joki Explore Per 1% Map + Free Oculus (ga termasuk all quest, quest seadanya)',
                 'image' => 'assets/images/genshin/map/chasm.jpg',
                 'services' => [
-                    ['name' => 'Mondstadt', 'price' => '150', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/Mondstadt.jpg'],
-                    ['name' => 'Dragonspine', 'price' => '400', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/dragonspine.jpg'],
-                    ['name' => 'Liyue', 'price' => '200', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/liyue.png'],
-                    ['name' => 'Chenju Valley', 'price' => '250', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chenju.png'],
-                    ['name' => 'Chasm', 'price' => '250', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chasm_atas.jpg'],
-                    ['name' => 'Chasm Underground', 'price' => '350', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chasm_bawah.jpg'],
-                    ['name' => 'Inazuma', 'price' => '300', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/inazuma.jpg'],
-                    ['name' => 'Enkanomiya', 'price' => '500', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/enkanomiya.png'],
-                    ['name' => 'Sumeru Hutan', 'price' => '250', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/sumeru.jpg'],
-                    ['name' => 'Sumeru Desert', 'price' => '350', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/sumeru_pasir.jpg'],
-                    ['name' => 'Fontaine', 'price' => '250', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/fountaine.jpg'],
-                    ['name' => 'Sea of Bygone', 'price' => '350', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/seaofbyo.jpg'],
-                    ['name' => 'Natlan', 'price' => '300', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/natlan.jpg'],
-                    ['name' => 'Ancient Sacred Mountain', 'price' => '500', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/ancient.jpg'],
+                    ['name' => 'Mondstadt', 'price' => '225', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/Mondstadt.jpg'],
+                    ['name' => 'Dragonspine', 'price' => '575', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/dragonspine.jpg'],
+                    ['name' => 'Liyue', 'price' => '300', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/liyue.png'],
+                    ['name' => 'Chenju Valley', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chenju.png'],
+                    ['name' => 'Chasm', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chasm_atas.jpg'],
+                    ['name' => 'Chasm Underground', 'price' => '525', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chasm_bawah.jpg'],
+                    ['name' => 'Inazuma', 'price' => '425', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/inazuma.jpg'],
+                    ['name' => 'Enkanomiya', 'price' => '725', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/enkanomiya.png'],
+                    ['name' => 'Sumeru Hutan', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/sumeru.jpg'],
+                    ['name' => 'Sumeru Desert', 'price' => '500', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/sumeru_pasir.jpg'],
+                    ['name' => 'Fontaine', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/fountaine.jpg'],
+                    ['name' => 'Sea of Bygone', 'price' => '525', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/seaofbyo.jpg'],
+                    ['name' => 'Natlan', 'price' => '425', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/natlan.jpg'],
+                    ['name' => 'Ancient Sacred Mountain', 'price' => '725', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/ancient.jpg'],
                 ]
+
             ],
             'quest' => [
                 'title' => 'All Quest',
@@ -54,9 +55,9 @@ $games = [
                 'image' => 'assets/images/genshin/quest/char.jpg',
                 'services' => [
                     ['name' => 'Quest Archon', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/genshin/quest/archon.jpg'],
-                    ['name' => 'Quest Karakter', 'price' => '20K', 'unit' => 'karakter', 'image' => 'assets/images/genshin/quest/char.jpg'],
-                    ['name' => 'Quest Dunia (No Chapter)', 'price' => '15K', 'unit' => 'quest', 'image' => 'assets/images/genshin/quest/world.jpg'],
-                    ['name' => 'Quest Dunia (Per Chapter)', 'price' => '5K', 'unit' => 'chapter', 'image' => 'assets/images/genshin/quest/world_2.jpg'],
+                    ['name' => 'Quest Karakter', 'price' => '25K', 'unit' => 'karakter', 'image' => 'assets/images/genshin/quest/char.jpg'],
+                    ['name' => 'Quest Dunia (No Chapter)', 'price' => '20K', 'unit' => 'quest', 'image' => 'assets/images/genshin/quest/world.jpg'],
+                    ['name' => 'Quest Dunia (Per Chapter)', 'price' => '8K', 'unit' => 'chapter', 'image' => 'assets/images/genshin/quest/world_2.jpg'],
                 ]
             ],
             'services' => [
@@ -64,12 +65,12 @@ $games = [
                 'description' => 'Berbagai Layanan Joki Genshin Impact',
                 'image' => 'assets/images/genshin/lainnya.png',
                 'services' => [
-                    ['name' => 'Open Teleport', 'price' => '1K', 'unit' => 'teleport'],
-                    ['name' => 'Mancing R5 Weapon', 'price' => '35K', 'unit' => 'weapon'],
+                    ['name' => 'Open Teleport', 'price' => '2.5K', 'unit' => 'teleport'],
+                    ['name' => 'Mancing R5 Weapon', 'price' => '40K', 'unit' => 'weapon'],
                     ['name' => 'Event Story All Clear', 'price' => '25K', 'unit' => 'event'],
                     ['name' => 'Oculus', 'price' => '1K', 'unit' => 'oculus'],
-                    ['name' => 'Rawat Akun (2/5)', 'price' => '10K', 'unit' => '7 hari'],
-                    ['name' => 'Spam Domain', 'price' => '5K', 'unit' => '10x run'],
+                    ['name' => 'Rawat Akun (2/5)', 'price' => '30K', 'unit' => '7 hari'],
+                    ['name' => 'Spam Domain', 'price' => '20K', 'unit' => '10x run'],
                 ]
             ]
         ]
@@ -85,7 +86,7 @@ $games = [
                 'services' => [
                     ['name' => 'PF (Pure Fiction)', 'price' => '20K', 'image' => 'assets/images/hsr/endgame/PF.jpeg'],
                     ['name' => 'MOC (Memory Of Chaos)', 'price' => '20K', 'image' => 'assets/images/hsr/endgame/MOC.jpeg'],
-                    ['name' => 'MOC Stage 11-12', 'price' => '15K', 'image' => 'assets/images/hsr/endgame/MOC.jpeg'],
+                    ['name' => 'MOC Stage 11-12', 'price' => '10k - 15K', 'image' => 'assets/images/hsr/endgame/MOC.jpeg'],
                     ['name' => 'Apocalyptic Shadow', 'price' => '15K', 'image' => 'assets/images/hsr/endgame/APOCALPSE.jpeg'],
                 ]
             ],
@@ -105,11 +106,11 @@ $games = [
                 'description' => 'Joki Explore Semua Map HSR + Puzzle',
                 'image' => 'assets/images/hsr/map/belobog.jpeg',
                 'services' => [
-                    ['name' => 'All Amphoreus (inc Nymph + All Puzzle)', 'price' => '75K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/Amorpheus.jpeg'],
-                    ['name' => 'All Xianzhou (inc All Puzzle)', 'price' => '40K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/xianzhou.jpeg'],
-                    ['name' => 'All Belobog (inc All Puzzle)', 'price' => '25K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/belobog.jpeg'],
-                    ['name' => 'All Space Herta (inc All Puzzle)', 'price' => '20K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/herta-spacestation.jpeg'],
-                    ['name' => 'All Penacony (inc Sticker + Bird + Puzzle)', 'price' => '160K', 'unit' => 'wilayah', 'image' => 'assets/images/hsr/map/penacony.jpeg'],
+                    ['name' => 'All Amphoreus (inc Nymph + All Puzzle)', 'price' => '75K', 'unit' => '3.0 - 3.3', 'image' => 'assets/images/hsr/map/Amorpheus.jpeg'],
+                    ['name' => 'All Xianzhou (inc All Puzzle)', 'price' => '45K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/xianzhou.jpeg'],
+                    ['name' => 'All Belobog (inc All Puzzle)', 'price' => '25K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/belobog.jpeg'],
+                    ['name' => 'All Space Herta (inc All Puzzle)', 'price' => '20K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/herta-spacestation.jpeg'],
+                    ['name' => 'All Penacony (inc Sticker + Bird + Puzzle)', 'price' => '95K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/penacony.jpeg'],
                 ]
             ],
             'story_quest' => [
@@ -129,6 +130,7 @@ $games = [
                 'description' => 'Berbagai Jenis Quest HSR',
                 'image' => 'assets/images/hsr/other.jpg',
                 'services' => [
+                    ['name' => 'Quest Story Ampho 🟡', 'price' => '30K', 'unit' => 'quest'],
                     ['name' => 'Quest Lanjutan 🟠', 'price' => '20K', 'unit' => 'quest'],
                     ['name' => 'Quest Ungu 🟣', 'price' => '12K', 'unit' => 'quest'],
                     ['name' => 'Quest Biru 🔵', 'price' => '4K', 'unit' => 'quest'],
@@ -153,7 +155,7 @@ $games = [
                     ['name' => 'Gold and Gears', 'price' => '85K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/GnG.jpeg'],
                     ['name' => 'Zona Rahasia', 'price' => '75K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/Zona-Rahasia.jpeg'],
                     ['name' => 'Divergent Universe (Per Level)', 'price' => '2K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/DU.jpeg'],
-                    ['name' => 'Divergent Universe (MAX)', 'price' => '80K', 'unit' => 'max clear', 'image' => 'assets/images/hsr/world/DU.jpeg'],
+                    ['name' => 'Divergent Universe (MAX)', 'price' => '120K', 'unit' => 'max clear', 'image' => 'assets/images/hsr/world/DU.jpeg'],
                 ]
             ]
         ]
@@ -215,10 +217,10 @@ $games = [
                 'description' => 'Joki Explore Semua Map WuWa - 100% Manual',
                 'image' => 'assets/images/wuwa/map/septimont.jpg',
                 'services' => [
-                    ['name' => 'Huanglong', 'price' => '200K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/huanglong.jpg'],
-                    ['name' => 'Rinascita', 'price' => '150K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/rinascita.jpg'],
-                    ['name' => 'BlackShores', 'price' => '60K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/blackshores.jpg'],
-                    ['name' => 'Septimont', 'price' => '50K', 'unit' => 'wilayah', 'image' => 'assets/images/wuwa/map/septimont.jpg'],
+                    ['name' => 'Huanglong', 'price' => '230K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/huanglong.jpg'],
+                    ['name' => 'Rinascita', 'price' => '175K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/rinascita.jpg'],
+                    ['name' => 'BlackShores', 'price' => '40K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/blackshores.jpg'],
+                    ['name' => 'Septimont', 'price' => '120K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/septimont.jpg'],
                 ]
             ],
             'all_quest' => [
@@ -226,9 +228,9 @@ $games = [
                 'description' => 'Joki Semua Jenis Quest WuWa',
                 'image' => 'assets/images/wuwa/quest/quest.jpg',
                 'services' => [
-                    ['name' => 'Main Quest', 'price' => '10K', 'unit' => 'act', 'image' => 'assets/images/wuwa/quest/main.png'],
-                    ['name' => 'Exploration Quest', 'price' => '8K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/explor.png'],
-                    ['name' => 'Companion Quest', 'price' => '7K', 'unit' => 'quest'],
+                    ['name' => 'Main Quest', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/wuwa/quest/main.png'],
+                    ['name' => 'Exploration Quest', 'price' => '15K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/explor.png'],
+                    ['name' => 'Companion Quest', 'price' => '15K', 'unit' => 'quest'],
                     ['name' => 'Side Quest', 'price' => '5K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/side.png'],
                 ]
             ],
@@ -237,9 +239,9 @@ $games = [
                 'description' => 'Joki Event WuWa Terbaru dan Lama',
                 'image' => 'assets/images/wuwa/event/dreaming.jpg',
                 'services' => [
-                    ['name' => 'Cube Cubic', 'price' => '25K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/cube.jpg'],
-                    ['name' => 'Dreaming Full Reward', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/dreaming.jpg'],
-                    ['name' => 'New Event', 'price' => '20K', 'unit' => 'event'],
+                    ['name' => 'Cube Cubic', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/cube.jpg'],
+                    ['name' => 'Dreaming Full Reward', 'price' => '35K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/dreaming.jpg'],
+                    ['name' => 'New Event', 'price' => '15K - 35k', 'unit' => 'event'],
                 ]
             ],
             'other_services' => [
@@ -247,9 +249,9 @@ $games = [
                 'description' => 'Berbagai Layanan Joki WuWa',
                 'image' => 'assets/images/wuwa/other.jpg',
                 'services' => [
-                    ['name' => 'Sonance Casket', 'price' => '15K', 'unit' => 'service'],
-                    ['name' => 'Buka All Teleport', 'price' => '10K', 'unit' => 'service'],
-                    ['name' => 'Data Bank', 'price' => '20K', 'unit' => 'service'],
+                    ['name' => 'Sonance Casket', 'price' => '20K', 'unit' => 'service'],
+                    ['name' => 'Buka All Teleport', 'price' => '25K', 'unit' => 'service'],
+                    ['name' => 'Data Bank', 'price' => '30K', 'unit' => 'service'],
                     ['name' => 'Build Character', 'price' => '50K', 'unit' => 'character'],
                 ]
             ]
@@ -263,12 +265,12 @@ $site_config = [
     'site_description' => 'Layanan joki game profesional untuk Genshin Impact, Honkai Star Rail, Zenless Zone Zero, dan Wuthering Waves',
     'contact' => [
         'whatsapp' => '6285740875048',
-        'discord' => 'jokiepsi#1234',
+        'discord' => '',
         'saweria' => 'https://saweria.co/Epsi'
     ],
     'notes' => [
         'Syarat quest dunia per region yang ingin di joki explore wajib sudah selesai, jika tidak akan ada tambahan biaya',
-        'Bisa request joki yang tidak ada di list',
+        'Bisa request joki yang tidak ada di list WA aja',
         'Joki dikerjakan 100% MANUAL no cheat',
         'Kemahalan? Silahkan bisa nego',
     ]
