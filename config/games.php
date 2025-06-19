@@ -258,7 +258,7 @@ $games = [
         ]
     ],
     'pgr' => [
-        'title' => 'Wuthering Waves',
+        'title' => 'PGR',
         'image' => 'assets/images/wuwa.jpg',
         'categories' => [
             'rawat_akun' => [
