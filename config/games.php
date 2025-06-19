@@ -2,7 +2,7 @@
 // Konfigurasi data games dan pricelist
 $games = [
     'genshin' => [
-        'title' => 'Genshin Impact 2',
+        'title' => 'Genshin Impact',
         'image' => 'assets/images/genshin.jpg',
         'categories' => [
             'explore_full' => [
