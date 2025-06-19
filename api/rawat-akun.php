@@ -39,8 +39,8 @@ $game = $games[$game_id];
                 <!-- Category Grid -->
                 <div class="category-grid">
                     <?php foreach ($game['categories'] as $cat_id => $category): ?>
-                        <!-- <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card"> sengaja di hide biarin aja -->
-                        <a href="" class="category-card">
+                        <!-- <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card"> -->
+                        <div class="category-card">
 
                             <div class="category-image">
                                 <img src="<?php echo isset($category['image']) ? '../' . $category['image'] : '../assets/images/placeholder.jpg'; ?>"
