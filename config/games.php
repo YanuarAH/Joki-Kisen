@@ -160,7 +160,7 @@ $games = [
     ],
     'patch-3-3' => [
         'title' => 'Joki 1 Patch 3.3',
-        'image' => 'assets/images/hsr/patch 33.jpg',
+        'image' => 'assets/images/hsr/patch/patch 33.jpg',
         'categories' => [
             'patch-joki' => [
                 'title' => 'Joki Patch 3.3',
