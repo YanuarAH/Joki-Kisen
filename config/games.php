@@ -8,37 +8,36 @@ $games = [
             '1_hari' => [
                 'title' => 'Rawat Akun 1 Hari',
                 'description' => 'Penugasan, Habisin Trailbaze Power selama 1 hari',
-                'image' => 'assets/images/hsr/area/ancient.jpg',
+                'image' => 'assets/images/hsr/rawat-akun/harian.jpeg',
                 'price' => '5K',
                 'services' => []
             ],
             '1_minggu' => [
                 'title' => 'Rawat Akun 1 Minggu',
                 'description' => 'Penugasan, Habisin Trailbaze Power selama 7 hari',
-                'image' => 'assets/images/hsr/map/chasm.jpg',
+                'image' => 'assets/images/hsr/rawat-akun/mingguan.jpeg',
                 'price' => '14K',
                 'services' => []
-
             ],
             '1_bulan' => [
                 'title' => 'Rawat Akun 1 Bulan',
                 'description' => 'Penugasan, Habisin Trailbaze Power selama 30 hari',
-                'image' => 'assets/images/hsr/quest/char.jpg',
+                'image' => 'assets/images/hsr/rawat-akun/bulanan.jpeg',
                 'price' => '60K',
                 'services' => []
             ],
             '1_minggu_premium' => [
                 'title' => 'Rawat Akun 1 Minggu Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 7 hari',
-                'image' => 'assets/images/hsr/lainnya.png',
+                'image' => 'assets/images/hsr/rawat-akun/1minggu_premium.avif',
                 'price' => '20K',
                 'services' => []
             ],
             '1_bulan_premium' => [
                 'title' => 'Rawat Akun 1 Bulan Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 30 hari',
-                'image' => 'assets/images/hsr/lainnya.png',
-                'price' => '80  K',
+                'image' => 'assets/images/hsr/rawat-akun/1bulan_premium.avif',
+                'price' => '80K',
                 'services' => []
             ]
         ]
