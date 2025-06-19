@@ -59,7 +59,7 @@ $games = [
         'categories' => [
             'endgame_content' => [
                 'title' => 'End Game Content',
-                'description' => 'Joki End Game HSR - Pengerjaan Manual',
+                'description' => 'Joki End Game HSR - Pengerjaan Manual ',
                 'image' => 'assets/images/hsr/endgame/APOCALPSE.jpeg',
                 'services' => [
                     ['name' => 'PF (Pure Fiction)', 'price' => '20K', 'image' => 'assets/images/hsr/endgame/PF.jpeg'],
