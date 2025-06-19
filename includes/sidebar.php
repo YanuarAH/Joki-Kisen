@@ -16,13 +16,13 @@ $is_homepage = ($current_page_base === 'index');
 
 // Jika kita berada di halaman game, belum ada kategori yang dipilih, DAN BUKAN halaman kategori, set default
 if (
-    isset($games[$game_id_from_page]) && 
-    empty($current_category) && 
+    isset($games[$game_id_from_page]) &&
+    empty($current_category) &&
     strpos($current_page_base, '-categories') === false
 ) {
     // Menggunakan array_key_first untuk cara yang lebih modern (membutuhkan PHP 7.3+)
     // atau array_keys(...)[0] untuk kompatibilitas yang lebih luas.
-    $current_category = array_key_first($games[$game_id_from_page]['categories']);
+    $current_category = array_key_first($games[$game_id_from_page]);
 }
 ?>
 <aside class="sidebar">
@@ -44,29 +44,30 @@ if (
             <h3 class="sidebar-title">Daftar Game</h3>
             <div class="sidebar-nav">
                 <?php foreach ($games as $sidebar_game_id => $sidebar_game): ?>
-                <a href="/games/<?php echo htmlspecialchars($sidebar_game_id); ?>-categories.php" 
-                   class="sidebar-link <?php echo $game_id_from_page === $sidebar_game_id ? 'active' : ''; ?>">
-                    <?php echo htmlspecialchars($sidebar_game['title']); ?>
-                </a>
+                    <a href="/games/<?php echo htmlspecialchars($sidebar_game_id); ?>.php"
+                        class="sidebar-link <?php echo $game_id_from_page === $sidebar_game_id ? 'active' : ''; ?>">
+                        <?php echo htmlspecialchars($sidebar_game['title']); ?>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </nav>
 
         <?php if (isset($games[$game_id_from_page])): ?>
-        <nav class="sidebar-section">
-            <h3 class="sidebar-title">Layanan <?php echo htmlspecialchars($games[$game_id_from_page]['title']); ?></h3>
-            <div class="sidebar-nav">
-                <?php foreach ($games[$game_id_from_page]['categories'] as $sidebar_cat_id => $sidebar_category): ?>
-                <a href="/games/<?php echo htmlspecialchars($game_id_from_page); ?>.php?category=<?php echo htmlspecialchars($sidebar_cat_id); ?>" 
-                   class="sidebar-link category-link <?php echo $current_category === $sidebar_cat_id ? 'active' : ''; ?>">
-                    <?php echo htmlspecialchars($sidebar_category['title']); ?>
-                </a>
-                <?php endforeach; ?>
-            </div>
-        </nav>
+            <nav class="sidebar-section">
+                <h3 class="sidebar-title">Daftar Game</h3>
+                <div class="sidebar-nav">
+                    <?php foreach ($games as $sidebar_game_id => $sidebar_game): ?>
+                        <a href="/api/<?php echo htmlspecialchars($sidebar_game_id); ?>.php"
+                            class="sidebar-link <?php echo $game_id_from_page === $sidebar_game_id ? 'active' : ''; ?>">
+                            <?php echo htmlspecialchars($sidebar_game['title']); ?>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+            </nav>
+
         <?php endif; ?>
     </div>
-    
+
     <div class="sidebar-footer">
         <p>&copy; <?php echo date("Y"); ?> Joki Kisen. All Rights Reserved.</p>
     </div>

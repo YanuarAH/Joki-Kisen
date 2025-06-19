@@ -111,21 +111,21 @@ $games = [
             'puzzle' => [
                 'title' => 'Puzzle',
                 'description' => 'Menyelesaikan teka-teki di map',
-                'image' => 'assets/images/hsr/world/puzzle.jpg',
+                'image' => 'assets/images/hsr/world/puzzle.png',
                 'price' => '1K / Puzzle',
                 'services' => []
             ],
             'origami' => [
                 'title' => 'Burung Origami',
                 'description' => 'Mengumpulkan burung origami',
-                'image' => 'assets/images/hsr/world/origami.jpg',
+                'image' => 'assets/images/hsr/world/origami.png',
                 'price' => '1K / Burung',
                 'services' => []
             ],
             'serangga' => [
                 'title' => 'Serangga',
                 'description' => 'Mengumpulkan serangga rare',
-                'image' => 'assets/images/hsr/world/serangga.jpg',
+                'image' => 'assets/images/hsr/world/serangga.jpeg',
                 'price' => '1K / Serangga',
                 'services' => []
             ]
@@ -152,7 +152,7 @@ $games = [
             'pojok-nostalgia' => [
                 'title' => 'Pojok Nostalgia',
                 'description' => 'Misi nostalgia / cerita lama',
-                'image' => 'assets/images/hsr/event/pojok nostalgia.jpeg',
+                'image' => 'assets/images/hsr/event/pojok nostalgia.jpg',
                 'price' => '30K',
                 'services' => []
             ]
@@ -165,7 +165,7 @@ $games = [
             'patch-joki' => [
                 'title' => 'Joki Patch 3.3',
                 'description' => 'Story, map baru, endgame, dan event patch 3.3',
-                'image' => 'assets/images/patch/3.3.jpg',
+                'image' => 'assets/images/hsr/patch/3.3.jpg',
                 'price' => '300K',
                 'services' => []
             ]
