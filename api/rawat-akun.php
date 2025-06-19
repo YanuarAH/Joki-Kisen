@@ -46,9 +46,9 @@ $game = $games[$game_id];
                                 <img src="<?php echo isset($category['image']) ? '../' . $category['image'] : '../assets/images/placeholder.jpg'; ?>"
                                     alt="<?php echo $category['title']; ?>"
                                     onerror="this.onerror=null;this.src='../assets/images/placeholder.jpg';">
-                                <div class="category-badge">
+                                <!-- <div class="category-badge">
                                     <?php echo count($category['services']); ?> layanan
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="category-info">
