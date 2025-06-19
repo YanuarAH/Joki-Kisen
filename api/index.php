@@ -108,6 +108,16 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             cursor: pointer;
             font-weight: bold;
         }
+        .linktree-card--yellow {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.linktree-card--yellow:hover {
+    background-color: #e0a800;
+    color: #000;
+}
+
     </style>
 </head>
 
@@ -178,10 +188,10 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             <div class="container">
                 <h2 class="section-title">Temukan Kami</h2>
                 <div class="linktree-grid">
-                    <a href="https://wavestore.id/" target="_blank" class="linktree-card">Wave Store ID</a>
+                    <a href="https://wavestore.id/" target="_blank" class="linktree-card linktree-card--yellow">Wave Store ID</a>
                     <a href="https://discord.com/invite/PxtScDTj4Y" target="_blank" class="linktree-card">DC KISENITY</a>
                     <a href="https://www.youtube.com/channel/UCCjq8-CDPkODruPjlVk2MBg" target="_blank" class="linktree-card">YOUTUBE KIRITO SENPAI</a>
-                    <a href="https://twitter.com/kisenjoki" target="_blank" class="linktree-card">Twitter KISEN JOKI</a>
+                    <a href="https://twitter.com/kisenjoki" target="_blank" class="linktree-card linktree-card--yellow">Twitter KISEN JOKI</a>
                     <button onclick="openModal()" class="linktree-card">SPEK PC KISEN</button>
                 </div>
             </div>
