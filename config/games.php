@@ -11,21 +11,7 @@ $games = [
                 'image' => 'assets/images/genshin/area/ancient.jpg',
                 'price' => '5K',
                 'services' => [
-                    ['name' => 'Mondstadt', 'price' => '15K', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/moondstat.jpg'],
-                    ['name' => 'Dragonspine', 'price' => '40K', 'image' => 'assets/images/genshin/area/dragonspine.jpg'],
-                    ['name' => 'Liyue', 'price' => '20K', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/liyue.jpg'],
-                    ['name' => 'Chenju Valley', 'price' => '25K', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/chenju.jpg'],
-                    ['name' => 'Chasm (Atas + Bawah)', 'price' => '60K', 'image' => 'assets/images/genshin/area/chasm.jpg'],
-                    ['name' => 'Chasm Atas', 'price' => '25K', 'image' => 'assets/images/genshin/area/chasm_atas.jpg'],
-                    ['name' => 'Chasm Bawah', 'price' => '35K', 'image' => 'assets/images/genshin/area/chasm_bawah.jpg'],
-                    ['name' => 'Inazuma', 'price' => '30K', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/inazuma.jpg'],
-                    ['name' => 'Enkanomiya', 'price' => '50K', 'image' => 'assets/images/genshin/area/enkanomiya.jpg'],
-                    ['name' => 'Sumeru', 'price' => '25k -100k ', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/sumeru.jpg'],
-                    // ['name' => 'Sumeru Desert', 'price' => '35K', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/sumeru_pasir.jpg'],
-                    ['name' => 'Fontaine', 'price' => '10k - 100k', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/fontaine.jpg'],
-                    ['name' => 'Sea of Bygone', 'price' => '35K', 'image' => 'assets/images/genshin/area/seaofbyo.jpg'],
-                    ['name' => 'Natlan', 'price' => '30K', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/natlan.jpg'],
-                    ['name' => 'Ancient Sacred Mountain', 'price' => '50K', 'image' => 'assets/images/genshin/area/ancient.jpg'],
+                  
                 ]
             ],
             '1_minggu' => [
@@ -34,20 +20,7 @@ $games = [
                 'image' => 'assets/images/genshin/map/chasm.jpg',
                 'price' => '5K',
                 'services' => [
-                    ['name' => 'Mondstadt', 'price' => '225', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/Mondstadt.jpg'],
-                    ['name' => 'Dragonspine', 'price' => '575', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/dragonspine.jpg'],
-                    ['name' => 'Liyue', 'price' => '300', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/liyue.png'],
-                    ['name' => 'Chenju Valley', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chenju.png'],
-                    ['name' => 'Chasm', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chasm_atas.jpg'],
-                    ['name' => 'Chasm Underground', 'price' => '525', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/chasm_bawah.jpg'],
-                    ['name' => 'Inazuma', 'price' => '425', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/inazuma.jpg'],
-                    ['name' => 'Enkanomiya', 'price' => '725', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/enkanomiya.png'],
-                    ['name' => 'Sumeru Hutan', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/sumeru.jpg'],
-                    ['name' => 'Sumeru Desert', 'price' => '500', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/sumeru_pasir.jpg'],
-                    ['name' => 'Fontaine', 'price' => '375', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/fountaine.jpg'],
-                    ['name' => 'Sea of Bygone', 'price' => '525', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/seaofbyo.jpg'],
-                    ['name' => 'Natlan', 'price' => '425', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/natlan.jpg'],
-                    ['name' => 'Ancient Sacred Mountain', 'price' => '725', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/ancient.jpg'],
+                    
                 ]
 
             ],
@@ -57,10 +30,7 @@ $games = [
                 'image' => 'assets/images/genshin/quest/char.jpg',
                 'price' => '5K',
                 'services' => [
-                    ['name' => 'Quest Archon', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/genshin/quest/archon.jpg'],
-                    ['name' => 'Quest Karakter', 'price' => '25K', 'unit' => 'karakter', 'image' => 'assets/images/genshin/quest/char.jpg'],
-                    ['name' => 'Quest Dunia (No Chapter)', 'price' => '20K', 'unit' => 'quest', 'image' => 'assets/images/genshin/quest/world.jpg'],
-                    ['name' => 'Quest Dunia (Per Chapter)', 'price' => '8K', 'unit' => 'chapter', 'image' => 'assets/images/genshin/quest/world_2.jpg'],
+                   
                 ]
             ],
             '1_minggu_premium' => [
@@ -69,12 +39,7 @@ $games = [
                 'image' => 'assets/images/genshin/lainnya.png',
                 'price' => '5K',
                 'services' => [
-                    ['name' => 'Open Teleport', 'price' => '2.5K', 'unit' => 'teleport'],
-                    ['name' => 'Mancing R5 Weapon', 'price' => '40K', 'unit' => 'weapon'],
-                    ['name' => 'Event Story All Clear', 'price' => '25K', 'unit' => 'event'],
-                    ['name' => 'Oculus', 'price' => '1K', 'unit' => 'oculus'],
-                    ['name' => 'Rawat Akun (2/5)', 'price' => '30K', 'unit' => '7 hari'],
-                    ['name' => 'Spam Domain', 'price' => '20K', 'unit' => '10x run'],
+                   
                 ]
             ],
             '1_bulan_premium' => [
@@ -83,12 +48,7 @@ $games = [
                 'image' => 'assets/images/genshin/lainnya.png',
                 'price' => '5K',
                 'services' => [
-                    ['name' => 'Open Teleport', 'price' => '2.5K', 'unit' => 'teleport'],
-                    ['name' => 'Mancing R5 Weapon', 'price' => '40K', 'unit' => 'weapon'],
-                    ['name' => 'Event Story All Clear', 'price' => '25K', 'unit' => 'event'],
-                    ['name' => 'Oculus', 'price' => '1K', 'unit' => 'oculus'],
-                    ['name' => 'Rawat Akun (2/5)', 'price' => '30K', 'unit' => '7 hari'],
-                    ['name' => 'Spam Domain', 'price' => '20K', 'unit' => '10x run'],
+                    
                 ]
             ]
         ]
