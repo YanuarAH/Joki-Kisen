@@ -1508,3 +1508,7 @@ body {
     object-fit: contain;
     display: block;
 }
+.carousel-section {
+    position: relative; /* Penting untuk z-index bekerja */
+    z-index: 10; /* Lebih tinggi dari elemen lain */
+}
