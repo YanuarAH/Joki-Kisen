@@ -1,8 +1,8 @@
 <?php
 require_once dirname(__DIR__) . '/config/games.php';
-$game_id = 'zzz';
+$game_id = 'event';
 $game = $games[$game_id];
-$page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'];
+// $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'];
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -39,14 +39,16 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
                 <!-- Category Grid -->
                 <div class="category-grid">
                     <?php foreach ($game['categories'] as $cat_id => $category): ?>
-                        <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card">
+                        <!-- <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card"> -->
+                        <a class="category-card">
+
                             <div class="category-image">
                                 <img src="<?php echo isset($category['image']) ? '../' . $category['image'] : '../assets/images/placeholder.jpg'; ?>"
                                     alt="<?php echo $category['title']; ?>"
                                     onerror="this.onerror=null;this.src='../assets/images/placeholder.jpg';">
-                                <div class="category-badge">
+                                <!-- <div class="category-badge">
                                     <?php echo count($category['services']); ?> layanan
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="category-info">
@@ -54,10 +56,15 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
                                     <h3 class="category-title"><?php echo $category['title']; ?></h3>
                                     <span class="category-arrow">→</span>
                                 </div>
+
                                 <p class="category-description"><?php echo $category['description']; ?></p>
 
+                                <?php if (!empty($category['price'])): ?>
+                                    <p class="category-price"><strong>Harga Mulai:</strong> <?php echo $category['price']; ?></p>
+                                <?php endif; ?>
+
                                 <div class="category-preview">
-                                    <p class="preview-label">Contoh layanan:</p>
+                                    <p class="preview-label">Contoh Layanan:</p>
                                     <div class="preview-services">
                                         <?php
                                         $preview_services = array_slice($category['services'], 0, 2);
@@ -75,6 +82,7 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
                                     </div>
                                 </div>
                             </div>
+
                         </a>
                     <?php endforeach; ?>
                 </div>

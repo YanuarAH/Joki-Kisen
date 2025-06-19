@@ -10,291 +10,168 @@ $games = [
                 'description' => 'Penugasan, Habisin Trailbaze Power selama 1 hari',
                 'image' => 'assets/images/genshin/area/ancient.jpg',
                 'price' => '5K',
-                'services' => [
-                  
-                ]
+                'services' => []
             ],
             '1_minggu' => [
                 'title' => 'Rawat Akun 1 Minggu',
                 'description' => 'Penugasan, Habisin Trailbaze Power selama 7 hari',
                 'image' => 'assets/images/genshin/map/chasm.jpg',
-                'price' => '5K',
-                'services' => [
-                    
-                ]
+                'price' => '14K',
+                'services' => []
 
             ],
             '1_bulan' => [
                 'title' => 'Rawat Akun 1 Bulan',
                 'description' => 'Penugasan, Habisin Trailbaze Power selama 30 hari',
                 'image' => 'assets/images/genshin/quest/char.jpg',
-                'price' => '5K',
-                'services' => [
-                   
-                ]
+                'price' => '60K',
+                'services' => []
             ],
             '1_minggu_premium' => [
                 'title' => 'Rawat Akun 1 Minggu Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 7 hari',
                 'image' => 'assets/images/genshin/lainnya.png',
-                'price' => '5K',
-                'services' => [
-                   
-                ]
+                'price' => '20K',
+                'services' => []
             ],
             '1_bulan_premium' => [
                 'title' => 'Rawat Akun 1 Bulan Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 30 hari',
                 'image' => 'assets/images/genshin/lainnya.png',
-                'price' => '5K',
-                'services' => [
-                    
-                ]
+                'price' => '80  K',
+                'services' => []
             ]
         ]
     ],
-    'hsr' => [
-        'title' => 'Honkai: Star Rail',
-        'image' => 'assets/images/hsr.jpg',
+    'moc-pf-apo' => [
+        'title' => 'MOC / PF / APO',
+        'image' => 'assets/images/genshin/quest/moc.jpg',
         'categories' => [
-            'endgame_content' => [
-                'title' => 'End Game Content',
-                'description' => 'Joki End Game HSR - Pengerjaan Manual ',
-                'image' => 'assets/images/hsr/endgame/APOCALPSE.jpeg',
-                'services' => [
-                    ['name' => 'PF (Pure Fiction)', 'price' => '20K', 'image' => 'assets/images/hsr/endgame/PF.jpeg'],
-                    ['name' => 'MOC (Memory Of Chaos)', 'price' => '20K', 'image' => 'assets/images/hsr/endgame/MOC.jpeg'],
-                    ['name' => 'MOC Stage 11-12', 'price' => '10k - 15K', 'image' => 'assets/images/hsr/endgame/MOC.jpeg'],
-                    ['name' => 'Apocalyptic Shadow', 'price' => '15K', 'image' => 'assets/images/hsr/endgame/APOCALPSE.jpeg'],
-                ]
+            'fc-moc' => [
+                'title' => 'FC MOC',
+                'description' => 'Full Clear Memory of Chaos',
+                'image' => 'assets/images/genshin/quest/moc.jpg',
+                'price' => '30K',
+                'services' => []
             ],
-            'rawat_akun' => [
-                'title' => 'Rawat Akun 🛠',
-                'description' => 'Layanan Rawat Akun HSR Profesional',
-                'image' => 'assets/images//hsr/daily.jpg',
-                'services' => [
-                    ['name' => 'Daily', 'price' => '3K', 'unit' => 'hari'],
-                    ['name' => 'Weekly (SU)', 'price' => '25K', 'unit' => 'minggu'],
-                    ['name' => 'Monthly (1 End game konten+ SU)', 'price' => '70K', 'unit' => 'bulan'],
-                    ['name' => '1 Patch  (All end game konten + SU)', 'price' => '120K', 'unit' => 'patch'],
-                ]
+            'fc-pf' => [
+                'title' => 'FC Pure Fiction',
+                'description' => 'Full Clear Pure Fiction',
+                'image' => 'assets/images/genshin/quest/pf.jpg',
+                'price' => '30K',
+                'services' => []
             ],
-            'explore_map' => [
-                'title' => 'Explore Map 🗺',
-                'description' => 'Joki Explore Semua Map HSR + Puzzle',
-                'image' => 'assets/images/hsr/map/belobog.jpeg',
-                'services' => [
-                    ['name' => 'All Amphoreus (inc Nymph + All Puzzle)', 'price' => '75K', 'unit' => '3.0 - 3.3', 'image' => 'assets/images/hsr/map/Amorpheus.jpeg'],
-                    ['name' => 'All Xianzhou (inc All Puzzle)', 'price' => '45K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/xianzhou.jpeg'],
-                    ['name' => 'All Belobog (inc All Puzzle)', 'price' => '25K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/belobog.jpeg'],
-                    ['name' => 'All Space Herta (inc All Puzzle)', 'price' => '20K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/herta-spacestation.jpeg'],
-                    ['name' => 'All Penacony (inc Sticker + Bird + Puzzle)', 'price' => '95K', 'unit' => 'all', 'image' => 'assets/images/hsr/map/penacony.jpeg'],
-                ]
-            ],
-            'story_quest' => [
-                'title' => 'Quest Story 🟡',
-                'description' => 'Ready Buat Story Quest Terbaru 👍🏻',
-                'image' => 'assets/images/hsr/story/xianzhou.jpeg',
-                'services' => [
-                    ['name' => 'Space Herta', 'price' => '20K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Herta-station.jpg'],
-                    ['name' => 'Belobog', 'price' => '35K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Belobog.jpeg'],
-                    ['name' => 'Luofu', 'price' => '60K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/xianzhou.jpeg'],
-                    ['name' => 'Penacony', 'price' => '120K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Penacony.jpg'],
-                    ['name' => 'Ampho 3.0 - 3.3', 'price' => '110K', 'unit' => 'story', 'image' => 'assets/images/hsr/story/Amphoreus.jpg'],
-                ]
-            ],
-            'other_quest' => [
-                'title' => 'Quest Lainnya',
-                'description' => 'Berbagai Jenis Quest HSR',
-                'image' => 'assets/images/hsr/other.jpg',
-                'services' => [
-                    ['name' => 'Quest Story Ampho 🟡', 'price' => '30K', 'unit' => 'quest'],
-                    ['name' => 'Quest Lanjutan 🟠', 'price' => '20K', 'unit' => 'quest'],
-                    ['name' => 'Quest Ungu 🟣', 'price' => '12K', 'unit' => 'quest'],
-                    ['name' => 'Quest Biru 🔵', 'price' => '4K', 'unit' => 'quest'],
-                ]
-            ],
-            'event' => [
-                'title' => 'Event New & Nostalgia 🔔',
-                'description' => 'Joki Event HSR Terbaru dan Lama',
-                'image' => 'assets/images/hsr/event/EventKecilMerge.jpg',
-                'services' => [
-                    ['name' => 'Event Kecil', 'price' => '10-15K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/Event-Kecil.jpg'],
-                    ['name' => 'Event Besar', 'price' => '25K', 'unit' => 'event', 'image' => 'assets/images/hsr/event/bigevent-merged.jpg'],
-                ]
-            ],
-            'leveling_world' => [
-                'title' => 'Leveling World',
-                'description' => 'Joki Leveling dan Simulated Universe',
-                'image' => 'assets/images/hsr/world/Zona-Rahasia.jpeg',
-                'services' => [
-                    ['name' => 'Patung Clockie', 'price' => '4K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/clockie.jpeg'],
-                    ['name' => 'Swarm Disaster', 'price' => '70K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/swarm.jpg'],
-                    ['name' => 'Gold and Gears', 'price' => '85K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/GnG.jpeg'],
-                    ['name' => 'Zona Rahasia', 'price' => '75K', 'unit' => 'clear', 'image' => 'assets/images/hsr/world/Zona-Rahasia.jpeg'],
-                    ['name' => 'Divergent Universe (Per Level)', 'price' => '2K', 'unit' => 'level', 'image' => 'assets/images/hsr/world/DU.jpeg'],
-                    ['name' => 'Divergent Universe (MAX)', 'price' => '120K', 'unit' => 'max clear', 'image' => 'assets/images/hsr/world/DU.jpeg'],
-                ]
+            'fc-apo' => [
+                'title' => 'FC Apocalypsis',
+                'description' => 'Full Clear Apocalypsis',
+                'image' => 'assets/images/genshin/quest/apo.jpg',
+                'price' => '30K',
+                'services' => []
             ]
         ]
     ],
-    'zzz' => [
-        'title' => 'Zenless Zone Zero',
-        'image' => 'assets/images/zzz.jpg',
+    'quest' => [
+        'title' => 'Quest',
+        'image' => 'assets/images/genshin/quest/main.jpg',
         'categories' => [
-            'story' => [
-                'title' => 'Story Mode',
-                'description' => 'Joki ZZZ Story',
-                'image' => 'assets/images/zzz/quest.jpg',
-                'services' => [
-                    ['name' => 'Special Episode:: Virtual Revenge + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
-                    ['name' => 'S1 Chapter 5 : A Storm of Falling Stars + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
-                    ['name' => 'Special Episode : Astra-nomical Moment + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
-                    ['name' => 'S1 Epilog: Bury Your Tears With the Past (A) + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
-                    ['name' => 'S1 Epilog: Bury Your Tears With the Past (B) + Hard Stage', 'price' => '20K', 'unit' => 'Story'],
-                    ['name' => 'S2 Chapter 1: Where Clouds Embrace the Dawn', 'price' => '20K', 'unit' => 'Story'],
-                ]
+            'misi-kuning' => [
+                'title' => 'Misi Kuning / Oren',
+                'description' => 'Quest utama (archon, companion, dll)',
+                'image' => 'assets/images/genshin/quest/kuning.jpg',
+                'price' => '35K',
+                'services' => []
             ],
-            'event' => [
-                'title' => 'Event',
-                'description' => 'Joki Event Zenless Zone Zero',
-                'image' => 'assets/images/zzz/event.png',
-                'services' => [
-                    ['name' => 'Overlord\'s Feast', 'price' => '15K', 'unit' => 'Event'],
-                    ['name' => 'The Mystery of Arpeggio Fault', 'price' => '35K', 'unit' => 'Event'],
-                ]
+            'misi-ungu' => [
+                'title' => 'Misi Ungu',
+                'description' => 'Quest sampingan',
+                'image' => 'assets/images/genshin/quest/ungu.jpg',
+                'price' => '15K',
+                'services' => []
             ],
-            'endgame' => [
-                'title' => 'End Game',
-                'description' => 'Joki ZZZ End Game',
-                'image' => 'assets/images/zzz/endgame.jpg',
-                'services' => [
-                    ['name' => 'Shiyu Defense', 'price' => '80K', 'unit' => 'S rank'],
-                    ['name' => 'Hollow Zero', 'price' => '40K', 'unit' => 'clear'],
-                ]
+            'misi-biru' => [
+                'title' => 'Misi Biru',
+                'description' => 'Quest harian',
+                'image' => 'assets/images/genshin/quest/biru.jpg',
+                'price' => '8K',
+                'services' => []
             ]
         ]
     ],
-    'wuwa' => [
-        'title' => 'Wuthering Waves',
-        'image' => 'assets/images/wuwa.jpg',
+    'explore' => [
+        'title' => 'Explore',
+        'image' => 'assets/images/genshin/map/explore.jpg',
         'categories' => [
-            'rawat_akun' => [
-                'title' => 'Rawat Akun',
-                'description' => 'Layanan Rawat Akun WuWa Profesional - Pengerjaan Manual 100%',
-                'image' => 'assets/images/wuwa/daily.jpg',
-                'services' => [
-                    ['name' => 'Harian', 'price' => '3K', 'unit' => 'hari'],
-                    ['name' => 'Mingguan', 'price' => '60K', 'unit' => 'minggu'],
-                    ['name' => 'Bulanan', 'price' => '150K', 'unit' => 'bulan'],
-                    ['name' => '1 Patch', 'price' => '200K', 'unit' => 'patch'],
-                ]
+            'chest' => [
+                'title' => 'Chest',
+                'description' => 'Pengambilan peti di area map',
+                'image' => 'assets/images/genshin/map/chest.jpg',
+                'price' => '1K / Chest',
+                'services' => []
             ],
-            'explore_map' => [
-                'title' => 'Explore All Map',
-                'description' => 'Joki Explore Semua Map WuWa - 100% Manual',
-                'image' => 'assets/images/wuwa/map/septimont.jpg',
-                'services' => [
-                    ['name' => 'Huanglong', 'price' => '230K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/huanglong.jpg'],
-                    ['name' => 'Rinascita', 'price' => '175K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/rinascita.jpg'],
-                    ['name' => 'BlackShores', 'price' => '40K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/blackshores.jpg'],
-                    ['name' => 'Septimont', 'price' => '120K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/septimont.jpg'],
-                ]
+            'puzzle' => [
+                'title' => 'Puzzle',
+                'description' => 'Menyelesaikan teka-teki di map',
+                'image' => 'assets/images/genshin/map/puzzle.jpg',
+                'price' => '1K / Puzzle',
+                'services' => []
             ],
-            'all_quest' => [
-                'title' => 'All Quest',
-                'description' => 'Joki Semua Jenis Quest WuWa',
-                'image' => 'assets/images/wuwa/quest/quest.jpg',
-                'services' => [
-                    ['name' => 'Main Quest', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/wuwa/quest/main.png'],
-                    ['name' => 'Exploration Quest', 'price' => '15K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/explor.png'],
-                    ['name' => 'Companion Quest', 'price' => '15K', 'unit' => 'quest'],
-                    ['name' => 'Side Quest', 'price' => '5K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/side.png'],
-                ]
+            'origami' => [
+                'title' => 'Burung Origami',
+                'description' => 'Mengumpulkan burung origami',
+                'image' => 'assets/images/genshin/map/origami.jpg',
+                'price' => '1K / Burung',
+                'services' => []
             ],
-            'event_content' => [
-                'title' => 'Event Content',
-                'description' => 'Joki Event WuWa Terbaru dan Lama',
-                'image' => 'assets/images/wuwa/event/dreaming.jpg',
-                'services' => [
-                    ['name' => 'Cube Cubic', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/cube.jpg'],
-                    ['name' => 'Dreaming Full Reward', 'price' => '35K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/dreaming.jpg'],
-                    ['name' => 'New Event', 'price' => '15K - 35k', 'unit' => 'event'],
-                ]
-            ],
-            'other_services' => [
-                'title' => 'Layanan Lainnya',
-                'description' => 'Berbagai Layanan Joki WuWa',
-                'image' => 'assets/images/wuwa/other.jpg',
-                'services' => [
-                    ['name' => 'Sonance Casket', 'price' => '20K', 'unit' => 'service'],
-                    ['name' => 'Buka All Teleport', 'price' => '25K', 'unit' => 'service'],
-                    ['name' => 'Data Bank', 'price' => '30K', 'unit' => 'service'],
-                    ['name' => 'Build Character', 'price' => '50K', 'unit' => 'character'],
-                ]
+            'serangga' => [
+                'title' => 'Serangga',
+                'description' => 'Mengumpulkan serangga rare',
+                'image' => 'assets/images/genshin/map/serangga.jpg',
+                'price' => '1K / Serangga',
+                'services' => []
             ]
         ]
     ],
-    'pgr' => [
-        'title' => 'PGR',
-        'image' => 'assets/images/wuwa.jpg',
+    'event' => [
+        'title' => 'Event',
+        'image' => 'assets/images/genshin/event/event.jpg',
         'categories' => [
-            'rawat_akun' => [
-                'title' => 'Rawat Akun',
-                'description' => 'Layanan Rawat Akun WuWa Profesional - Pengerjaan Manual 100%',
-                'image' => 'assets/images/wuwa/daily.jpg',
-                'services' => [
-                    ['name' => 'Harian', 'price' => '3K', 'unit' => 'hari'],
-                    ['name' => 'Mingguan', 'price' => '60K', 'unit' => 'minggu'],
-                    ['name' => 'Bulanan', 'price' => '150K', 'unit' => 'bulan'],
-                    ['name' => '1 Patch', 'price' => '200K', 'unit' => 'patch'],
-                ]
+            'manusia-pentung' => [
+                'title' => 'Manusia Pentung Raja Iblis',
+                'description' => 'Event khusus waktu terbatas',
+                'image' => 'assets/images/genshin/event/boss.jpg',
+                'price' => '30K',
+                'services' => []
             ],
-            'explore_map' => [
-                'title' => 'Explore All Map',
-                'description' => 'Joki Explore Semua Map WuWa - 100% Manual',
-                'image' => 'assets/images/wuwa/map/septimont.jpg',
-                'services' => [
-                    ['name' => 'Huanglong', 'price' => '230K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/huanglong.jpg'],
-                    ['name' => 'Rinascita', 'price' => '175K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/rinascita.jpg'],
-                    ['name' => 'BlackShores', 'price' => '40K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/blackshores.jpg'],
-                    ['name' => 'Septimont', 'price' => '120K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/septimont.jpg'],
-                ]
+            'perburuan-bayangan' => [
+                'title' => 'Perburuan Bayangan Cepat',
+                'description' => 'Event stealth cepat',
+                'image' => 'assets/images/genshin/event/bayangan.jpg',
+                'price' => '30K',
+                'services' => []
             ],
-            'all_quest' => [
-                'title' => 'All Quest',
-                'description' => 'Joki Semua Jenis Quest WuWa',
-                'image' => 'assets/images/wuwa/quest/quest.jpg',
-                'services' => [
-                    ['name' => 'Main Quest', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/wuwa/quest/main.png'],
-                    ['name' => 'Exploration Quest', 'price' => '15K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/explor.png'],
-                    ['name' => 'Companion Quest', 'price' => '15K', 'unit' => 'quest'],
-                    ['name' => 'Side Quest', 'price' => '5K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/side.png'],
-                ]
-            ],
-            'event_content' => [
-                'title' => 'Event Content',
-                'description' => 'Joki Event WuWa Terbaru dan Lama',
-                'image' => 'assets/images/wuwa/event/dreaming.jpg',
-                'services' => [
-                    ['name' => 'Cube Cubic', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/cube.jpg'],
-                    ['name' => 'Dreaming Full Reward', 'price' => '35K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/dreaming.jpg'],
-                    ['name' => 'New Event', 'price' => '15K - 35k', 'unit' => 'event'],
-                ]
-            ],
-            'other_services' => [
-                'title' => 'Layanan Lainnya',
-                'description' => 'Berbagai Layanan Joki WuWa',
-                'image' => 'assets/images/wuwa/other.jpg',
-                'services' => [
-                    ['name' => 'Sonance Casket', 'price' => '20K', 'unit' => 'service'],
-                    ['name' => 'Buka All Teleport', 'price' => '25K', 'unit' => 'service'],
-                    ['name' => 'Data Bank', 'price' => '30K', 'unit' => 'service'],
-                    ['name' => 'Build Character', 'price' => '50K', 'unit' => 'character'],
-                ]
+            'pojok-nostalgia' => [
+                'title' => 'Pojok Nostalgia',
+                'description' => 'Misi nostalgia / cerita lama',
+                'image' => 'assets/images/genshin/event/nostalgia.jpg',
+                'price' => '30K',
+                'services' => []
             ]
         ]
-    ]
+    ],
+    'patch-3-3' => [
+        'title' => 'Joki 1 Patch 3.3',
+        'image' => 'assets/images/genshin/lainnya.png',
+        'categories' => [
+            'patch-joki' => [
+                'title' => 'Joki Patch 3.3',
+                'description' => 'Story, map baru, endgame, dan event patch 3.3',
+                'image' => 'assets/images/genshin/lainnya.png',
+                'price' => '300K',
+                'services' => []
+            ]
+        ]
+    ],
+
 ];
 
 // Konfigurasi website
