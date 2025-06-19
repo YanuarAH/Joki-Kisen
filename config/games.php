@@ -256,6 +256,66 @@ $games = [
                 ]
             ]
         ]
+    ],
+    'pgr' => [
+        'title' => 'Wuthering Waves',
+        'image' => 'assets/images/wuwa.jpg',
+        'categories' => [
+            'rawat_akun' => [
+                'title' => 'Rawat Akun',
+                'description' => 'Layanan Rawat Akun WuWa Profesional - Pengerjaan Manual 100%',
+                'image' => 'assets/images/wuwa/daily.jpg',
+                'services' => [
+                    ['name' => 'Harian', 'price' => '3K', 'unit' => 'hari'],
+                    ['name' => 'Mingguan', 'price' => '60K', 'unit' => 'minggu'],
+                    ['name' => 'Bulanan', 'price' => '150K', 'unit' => 'bulan'],
+                    ['name' => '1 Patch', 'price' => '200K', 'unit' => 'patch'],
+                ]
+            ],
+            'explore_map' => [
+                'title' => 'Explore All Map',
+                'description' => 'Joki Explore Semua Map WuWa - 100% Manual',
+                'image' => 'assets/images/wuwa/map/septimont.jpg',
+                'services' => [
+                    ['name' => 'Huanglong', 'price' => '230K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/huanglong.jpg'],
+                    ['name' => 'Rinascita', 'price' => '175K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/rinascita.jpg'],
+                    ['name' => 'BlackShores', 'price' => '40K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/blackshores.jpg'],
+                    ['name' => 'Septimont', 'price' => '120K', 'unit' => 'all wilayah', 'image' => 'assets/images/wuwa/map/septimont.jpg'],
+                ]
+            ],
+            'all_quest' => [
+                'title' => 'All Quest',
+                'description' => 'Joki Semua Jenis Quest WuWa',
+                'image' => 'assets/images/wuwa/quest/quest.jpg',
+                'services' => [
+                    ['name' => 'Main Quest', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/wuwa/quest/main.png'],
+                    ['name' => 'Exploration Quest', 'price' => '15K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/explor.png'],
+                    ['name' => 'Companion Quest', 'price' => '15K', 'unit' => 'quest'],
+                    ['name' => 'Side Quest', 'price' => '5K', 'unit' => 'quest', 'image' => 'assets/images/wuwa/quest/side.png'],
+                ]
+            ],
+            'event_content' => [
+                'title' => 'Event Content',
+                'description' => 'Joki Event WuWa Terbaru dan Lama',
+                'image' => 'assets/images/wuwa/event/dreaming.jpg',
+                'services' => [
+                    ['name' => 'Cube Cubic', 'price' => '30K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/cube.jpg'],
+                    ['name' => 'Dreaming Full Reward', 'price' => '35K', 'unit' => 'event', 'image' => 'assets/images/wuwa/event/dreaming.jpg'],
+                    ['name' => 'New Event', 'price' => '15K - 35k', 'unit' => 'event'],
+                ]
+            ],
+            'other_services' => [
+                'title' => 'Layanan Lainnya',
+                'description' => 'Berbagai Layanan Joki WuWa',
+                'image' => 'assets/images/wuwa/other.jpg',
+                'services' => [
+                    ['name' => 'Sonance Casket', 'price' => '20K', 'unit' => 'service'],
+                    ['name' => 'Buka All Teleport', 'price' => '25K', 'unit' => 'service'],
+                    ['name' => 'Data Bank', 'price' => '30K', 'unit' => 'service'],
+                    ['name' => 'Build Character', 'price' => '50K', 'unit' => 'character'],
+                ]
+            ]
+        ]
     ]
 ];
 
