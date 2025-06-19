@@ -1,7 +1,7 @@
 <?php
 // Konfigurasi data games dan pricelist
 $games = [
-    'rawat_akun' => [
+    'rawat-akun' => [
         'title' => 'Rawat Akun',
         'image' => 'assets/images/genshin.jpg',
         'categories' => [
