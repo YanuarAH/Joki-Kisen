@@ -45,26 +45,26 @@ $games = [
     ],
     'moc-pf-apo' => [
         'title' => 'MOC / PF / APO',
-        'image' => 'assets/images/hsr/quest/moc.jpg',
+        'image' => 'assets/images/hsr/endgame/MOC.jpeg',
         'categories' => [
             'fc-moc' => [
                 'title' => 'FC MOC',
                 'description' => 'Full Clear Memory of Chaos',
-                'image' => 'assets/images/hsr/endgame/MOC.jpg',
+                'image' => 'assets/images/hsr/endgame/MOC.jpeg',
                 'price' => '30K',
                 'services' => []
             ],
             'fc-pf' => [
                 'title' => 'FC Pure Fiction',
                 'description' => 'Full Clear Pure Fiction',
-                'image' => 'assets/images/hsr/endgame/PF.jpg',
+                'image' => 'assets/images/hsr/endgame/PF.jpeg',
                 'price' => '30K',
                 'services' => []
             ],
             'fc-apo' => [
                 'title' => 'FC Apocalypsis',
                 'description' => 'Full Clear Apocalypsis',
-                'image' => 'assets/images/hsr/endgame/apo.jpg',
+                'image' => 'assets/images/hsr/endgame/apo.jpeg',
                 'price' => '30K',
                 'services' => []
             ]
@@ -72,7 +72,7 @@ $games = [
     ],
     'quest' => [
         'title' => 'Quest',
-        'image' => 'assets/images/hsr/quest/main.jpg',
+        'image' => 'assets/images/hsr/quest/quest.avif',
         'categories' => [
             'misi-kuning' => [
                 'title' => 'Misi Kuning / Oren',
@@ -99,7 +99,7 @@ $games = [
     ],
     'explore' => [
         'title' => 'Explore',
-        'image' => 'assets/images/hsr/map/explore.jpg',
+        'image' => 'assets/images/hsr/quest/explore.png',
         'categories' => [
             'chest' => [
                 'title' => 'Chest',
@@ -133,7 +133,7 @@ $games = [
     ],
     'event' => [
         'title' => 'Event',
-        'image' => 'assets/images/hsr/event/event.jpg',
+        'image' => 'assets/images/hsr/event/bigevent-merged.jpg',
         'categories' => [
             'manusia-pentung' => [
                 'title' => 'Manusia Pentung Raja Iblis',
@@ -160,12 +160,12 @@ $games = [
     ],
     'patch-3-3' => [
         'title' => 'Joki 1 Patch 3.3',
-        'image' => 'assets/images/hsr/lainnya.png',
+        'image' => 'assets/images/hsr/banner3.3.jpg',
         'categories' => [
             'patch-joki' => [
                 'title' => 'Joki Patch 3.3',
                 'description' => 'Story, map baru, endgame, dan event patch 3.3',
-                'image' => 'assets/images/hsr/patch/3.3.jpg',
+                'image' => 'assets/images/hsr/patch/banner3.3.jpg',
                 'price' => '300K',
                 'services' => []
             ]
