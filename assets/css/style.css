@@ -1506,7 +1506,7 @@ body {
     width: auto;
     height: auto;
     object-fit: contain;
-    display: block;
+  
 }
 .carousel-section {
     position: relative; /* Penting untuk z-index bekerja */
