@@ -39,7 +39,9 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
                 <!-- Category Grid -->
                 <div class="category-grid">
                     <?php foreach ($game['categories'] as $cat_id => $category): ?>
-                        <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card">
+                        <!-- <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card"> -->
+                        <a href="" class="category-card">
+
                             <div class="category-image">
                                 <img src="<?php echo isset($category['image']) ? '../' . $category['image'] : '../assets/images/placeholder.jpg'; ?>"
                                     alt="<?php echo $category['title']; ?>"
