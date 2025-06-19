@@ -1473,18 +1473,32 @@ body {
     font-style: italic;
 }
 
-/* Responsive untuk Halaman Kategori */
-@media (max-width: 768px) {
-    .category-grid {
-        grid-template-columns: 1fr; /* Satu kolom di mobile */
-        gap: 1rem;
-    }
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
 
-    .category-page-header {
-        text-align: left;
+/* Responsive max 4 kolom di desktop */
+@media (min-width: 1200px) {
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
+/* Tablet - 2 atau 3 kolom */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile - 1 kolom */
+@media (max-width: 767px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
