@@ -45,12 +45,10 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             left: -75%;
             width: 50%;
             height: 100%;
-            background: linear-gradient(
-                120deg,
-                rgba(255, 255, 255, 0) 0%,
-                rgba(255, 255, 255, 0.5) 50%,
-                rgba(255, 255, 255, 0) 100%
-            );
+            background: linear-gradient(120deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.5) 50%,
+                    rgba(255, 255, 255, 0) 100%);
             transform: skewX(-20deg);
             animation: glossy-slide 3s ease-in-out infinite;
             pointer-events: none;
@@ -60,17 +58,29 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             0% {
                 left: -75%;
             }
+
             100% {
                 left: 125%;
             }
         }
 
+        .linktree-card:focus,
+        .linktree-card:active {
+            background-color: inherit;
+            color: inherit;
+            outline: none;
+            box-shadow: none;
+        }
+
+
         /* Modal Styles */
         .modal-overlay {
             display: none;
             position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: rgba(0, 0, 0, 0.8);
             z-index: 999;
             justify-content: center;
@@ -108,16 +118,16 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             cursor: pointer;
             font-weight: bold;
         }
+
         .linktree-card--yellow {
-    background-color: #ffc107;
-    color: #000;
-}
+            background-color: #ffc107;
+            color: #000;
+        }
 
-.linktree-card--yellow:hover {
-    background-color: #e0a800;
-    color: #000;
-}
-
+        .linktree-card--yellow:hover {
+            background-color: #e0a800;
+            color: #000;
+        }
     </style>
 </head>
 
@@ -214,7 +224,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                         <a href="games/<?php echo $game_id; ?>" class="game-card">
                             <div class="game-image">
                                 <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>"
-                                     onerror="this.src='assets/images/placeholder.jpg'">
+                                    onerror="this.src='assets/images/placeholder.jpg'">
                             </div>
                             <div class="game-title"><?php echo $game['title']; ?></div>
                         </a>
@@ -237,4 +247,5 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
         }
     </script>
 </body>
+
 </html>
