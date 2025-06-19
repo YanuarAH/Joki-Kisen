@@ -52,7 +52,8 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                 rgba(255, 255, 255, 0) 100%
             );
             transform: skewX(-20deg);
-            animation: glossy-slide 3s ease-in-out forwards;
+            animation: glossy-slide 3s ease-in-out infinite;
+            pointer-events: none;
         }
 
         @keyframes glossy-slide {
