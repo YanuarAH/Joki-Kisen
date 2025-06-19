@@ -19,20 +19,20 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
     <main class="main-content">
 
         <!-- Carousel Section -->
-        <section class="carousel-section1">
-            <div class="container1">
-                <div class="carousel-container1">
-                    <div class="carousel-wrapper1">
-                        <div class="carousel-slide active1">
+        <section class="carousel-section">
+            <div class="container">
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slide active">
                             <img src="assets/images/carousel/c1.jpg" alt="Slide 1">
                         </div>
-                        <div class="carousel-slide1">
+                        <div class="carousel-slide">
                             <img src="assets/images/carousel/c2.jpg" alt="Slide 2">
                         </div>
-                        <div class="carousel-slide1">
+                        <div class="carousel-slide">
                             <img src="assets/images/carousel/c3.jpg" alt="Slide 3">
                         </div>
-                        <div class="carousel-slide1">
+                        <div class="carousel-slide">
                             <img src="assets/images/carousel/c4.jpg" alt="Slide 4">
                         </div>
                     </div>

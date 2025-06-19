@@ -1486,30 +1486,9 @@ body {
 }
 
 
-.carousel-section1 {
-    position: relative;
-    z-index: 1;
-}
 
-.carousel-wrapper1 {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: auto; /* biar tinggi ikut isi */
-    flex-direction: row;
-}
 
-.carousel-slide1{
-    min-width: 100%;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* penting agar tinggi disesuaikan isi */
-}
-
-.carousel-slide1 img {
+.carousel-slide img {
     width: 100%;
     height: auto;
     object-fit: contain;
