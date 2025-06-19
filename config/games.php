@@ -29,14 +29,14 @@ $games = [
             '1_minggu_premium' => [
                 'title' => 'Rawat Akun 1 Minggu Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 7 hari',
-                'image' => 'assets/images/hsr/rawat-akun/1minggu_premium.avif',
+                'image' => 'assets/images/hsr/rawat-akun/1minggu premium.avif',
                 'price' => '20K',
                 'services' => []
             ],
             '1_bulan_premium' => [
                 'title' => 'Rawat Akun 1 Bulan Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 30 hari',
-                'image' => 'assets/images/hsr/rawat-akun/1bulan_premium.avif',
+                'image' => 'assets/images/hsr/rawat-akun/1bulan premium.avif',
                 'price' => '80K',
                 'services' => []
             ]
