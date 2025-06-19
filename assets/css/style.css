@@ -1345,11 +1345,6 @@ body {
   margin: 0 auto;
 }
 
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-}
 
 .category-card {
   background-color: var(--surface);
@@ -1475,25 +1470,28 @@ body {
 
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-/* Responsive max 4 kolom di desktop */
+/* Desktop - 4 kolom full-width */
 @media (min-width: 1200px) {
     .category-grid {
         grid-template-columns: repeat(4, 1fr);
+        max-width: 100%; /* biar lebar grid sesuai lebar container */
     }
 }
 
-/* Tablet - 2 atau 3 kolom */
+/* Tablet */
 @media (min-width: 768px) and (max-width: 1199px) {
     .category-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile - 1 kolom */
+/* Mobile */
 @media (max-width: 767px) {
     .category-grid {
         grid-template-columns: 1fr;
