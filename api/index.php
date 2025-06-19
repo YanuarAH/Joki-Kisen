@@ -20,6 +20,8 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
         }
 
         .linktree-card {
+            position: relative;
+            overflow: hidden;
             background-color: #1e2a3a;
             color: white;
             text-align: center;
@@ -27,11 +29,39 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             border-radius: 8px;
             text-decoration: none;
             font-weight: 500;
-            transition: background 0.3s;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
         }
 
         .linktree-card:hover {
-            background-color: #2c3b4d;
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .linktree-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.5) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: skewX(-20deg);
+            animation: glossy-slide 3s ease-in-out forwards;
+        }
+
+        @keyframes glossy-slide {
+            0% {
+                left: -75%;
+            }
+            100% {
+                left: 125%;
+            }
         }
 
         /* Modal Styles */
@@ -160,7 +190,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
         <div class="modal-overlay" id="spekModal">
             <div class="modal-content">
                 <button class="modal-close" onclick="closeModal()">X</button>
-                <img src="assets/images/SPEK PC KISEN.png" alt="Spek PC Kisen">
+                <img src="assets/images/hsr/SPEK PC KISEN.png" alt="Spek PC Kisen">
             </div>
         </div>
 
@@ -173,7 +203,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                         <a href="games/<?php echo $game_id; ?>" class="game-card">
                             <div class="game-image">
                                 <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>"
-                                    onerror="this.src='assets/images/placeholder.jpg'">
+                                     onerror="this.src='assets/images/placeholder.jpg'">
                             </div>
                             <div class="game-title"><?php echo $game['title']; ?></div>
                         </a>
