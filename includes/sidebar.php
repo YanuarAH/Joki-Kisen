@@ -68,7 +68,7 @@ if (
     </div>
     
     <div class="sidebar-footer">
-        <p>&copy; <?php echo date("Y"); ?> Joki Epsi. All Rights Reserved.</p>
+        <p>&copy; <?php echo date("Y"); ?> Joki Kisen. All Rights Reserved.</p>
     </div>
 </aside>
 <div class="sidebar-overlay" onclick="toggleSidebar()"></div>

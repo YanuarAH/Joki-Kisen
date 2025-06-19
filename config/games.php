@@ -339,12 +339,12 @@ $games = [
 
 // Konfigurasi website
 $site_config = [
-    'site_name' => 'Joki Epsi',
-    'site_description' => 'Layanan joki game profesional untuk Genshin Impact, Honkai Star Rail, Zenless Zone Zero, dan Wuthering Waves',
+    'site_name' => 'Joki Kisen',
+    'site_description' => 'Layanan joki game profesional untuk game banyak bansos game Honkai Star Rail',
     'contact' => [
         'whatsapp' => '6285740875048',
         'discord' => '',
-        'saweria' => 'https://saweria.co/Epsi'
+        'saweria' => 'https://saweria.co/KiritoSenpai'
     ],
     'notes' => [
         'Syarat quest dunia per region yang ingin di joki explore wajib sudah selesai, jika tidak akan ada tambahan biaya',
