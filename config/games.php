@@ -160,12 +160,12 @@ $games = [
     ],
     'patch-3-3' => [
         'title' => 'Joki 1 Patch 3.3',
-        'image' => 'assets/images/hsr/banner3.3.jpg',
+        'image' => 'assets/images/hsr/patch33.jpg',
         'categories' => [
             'patch-joki' => [
                 'title' => 'Joki Patch 3.3',
                 'description' => 'Story, map baru, endgame, dan event patch 3.3',
-                'image' => 'assets/images/hsr/patch/banner3.3.jpg',
+                'image' => 'assets/images/hsr/patch/patch 333.jpg',
                 'price' => '300K',
                 'services' => []
             ]
