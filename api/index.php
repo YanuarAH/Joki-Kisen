@@ -81,7 +81,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
         <!-- Games Grid -->
         <section class="games-section">
             <div class="container">
-                <h2 class="section-title">All Games</h2>
+                <h2 class="section-title">All Konten</h2>
                 <div class="games-grid">
                     <?php foreach ($games as $game_id => $game): ?>
                         <a href="games/<?php echo $game_id; ?>" class="game-card">
