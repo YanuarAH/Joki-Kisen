@@ -77,6 +77,35 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                 </div>
             </div>
         </section>
+        <section class="linktree-section">
+    <div class="container">
+        <h2 class="section-title">Temukan Kami</h2>
+        <div class="linktree-grid">
+
+            <a href="https://wavestore.id" target="_blank" class="linktree-card">
+                Wave Store ID
+            </a>
+
+            <a href="https://discord.gg/kisenity" target="_blank" class="linktree-card">
+                DC KISENITY
+            </a>
+
+            <a href="https://www.youtube.com/@kiritosenpai15" target="_blank" class="linktree-card">
+                YOUTUBE KIRITO SENPAI
+            </a>
+
+            <a href="https://twitter.com/kisenjoki" target="_blank" class="linktree-card">
+                Twitter KISEN JOKI
+            </a>
+
+            <a href="https://example.com/spek-pc" target="_blank" class="linktree-card">
+                SPEK PC KISEN
+            </a>
+
+        </div>
+    </div>
+</section>
+
 
         <!-- Games Grid -->
         <section class="games-section">
