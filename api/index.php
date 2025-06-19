@@ -127,9 +127,9 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
     <main class="main-content">
 
         <!-- Carousel Section -->
-        <section class="carousel-section1">
-            <div class="container1">
-                <div class="carousel-container1">
+        <section class="carousel-section">
+            <div class="container">
+                <div class="carousel-container">
                     <div class="carousel-wrapper">
                         <div class="carousel-slide active">
                             <img src="assets/images/carousel/c1.jpg" alt="Slide 1">
