@@ -11,6 +11,73 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
     <title><?php echo $page_title; ?></title>
     <meta name="description" content="<?php echo $site_config['site_description']; ?>">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .linktree-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .linktree-card {
+            background-color: #1e2a3a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .linktree-card:hover {
+            background-color: #2c3b4d;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #111;
+            padding: 20px 20px 40px 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: auto;
+            position: relative;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,14 +104,11 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                         </div>
                     </div>
 
-
-                    <!-- Carousel Navigation -->
                     <div class="carousel-nav">
                         <button class="carousel-btn prev" onclick="prevSlide()" aria-label="Previous slide">‹</button>
                         <button class="carousel-btn next" onclick="nextSlide()" aria-label="Next slide">›</button>
                     </div>
 
-                    <!-- Carousel Indicators -->
                     <div class="carousel-indicators">
                         <button class="indicator active" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
                         <button class="indicator" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
@@ -77,35 +141,28 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                 </div>
             </div>
         </section>
+
+        <!-- Linktree Section -->
         <section class="linktree-section">
-    <div class="container">
-        <h2 class="section-title">Temukan Kami</h2>
-        <div class="linktree-grid">
+            <div class="container">
+                <h2 class="section-title">Temukan Kami</h2>
+                <div class="linktree-grid">
+                    <a href="https://wavestore.id/" target="_blank" class="linktree-card">Wave Store ID</a>
+                    <a href="https://discord.com/invite/PxtScDTj4Y" target="_blank" class="linktree-card">DC KISENITY</a>
+                    <a href="https://www.youtube.com/channel/UCCjq8-CDPkODruPjlVk2MBg" target="_blank" class="linktree-card">YOUTUBE KIRITO SENPAI</a>
+                    <a href="https://twitter.com/kisenjoki" target="_blank" class="linktree-card">Twitter KISEN JOKI</a>
+                    <button onclick="openModal()" class="linktree-card">SPEK PC KISEN</button>
+                </div>
+            </div>
+        </section>
 
-            <a href="https://wavestore.id" target="_blank" class="linktree-card">
-                Wave Store ID
-            </a>
-
-            <a href="https://discord.gg/kisenity" target="_blank" class="linktree-card">
-                DC KISENITY
-            </a>
-
-            <a href="https://www.youtube.com/@kiritosenpai15" target="_blank" class="linktree-card">
-                YOUTUBE KIRITO SENPAI
-            </a>
-
-            <a href="https://twitter.com/kisenjoki" target="_blank" class="linktree-card">
-                Twitter KISEN JOKI
-            </a>
-
-            <a href="https://example.com/spek-pc" target="_blank" class="linktree-card">
-                SPEK PC KISEN
-            </a>
-
+        <!-- Modal SPEK PC -->
+        <div class="modal-overlay" id="spekModal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">X</button>
+                <img src="assets/images/SPEK PC KISEN.png" alt="Spek PC Kisen">
+            </div>
         </div>
-    </div>
-</section>
-
 
         <!-- Games Grid -->
         <section class="games-section">
@@ -127,7 +184,16 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
     </main>
 
     <?php include dirname(__DIR__) . '/includes/footer.php'; ?>
-    <script src="assets/js/script.js"></script>
-</body>
 
+    <script src="assets/js/script.js"></script>
+    <script>
+        function openModal() {
+            document.getElementById('spekModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('spekModal').classList.remove('active');
+        }
+    </script>
+</body>
 </html>
