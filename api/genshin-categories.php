@@ -39,7 +39,7 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
                 <!-- Category Grid -->
                 <div class="category-grid">
                     <?php foreach ($game['categories'] as $cat_id => $category): ?>
-                        <!-- <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card"> -->
+                        <!-- <a href="<?php echo $game_id; ?>.php?category=<?php echo $cat_id; ?>" class="category-card"> sengaja di hide biarin aja -->
                         <a href="" class="category-card">
 
                             <div class="category-image">
@@ -56,7 +56,12 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
                                     <h3 class="category-title"><?php echo $category['title']; ?></h3>
                                     <span class="category-arrow">→</span>
                                 </div>
+
                                 <p class="category-description"><?php echo $category['description']; ?></p>
+
+                                <?php if (!empty($category['price'])): ?>
+                                    <p class="category-price"><strong>Harga Mulai:</strong> <?php echo $category['price']; ?></p>
+                                <?php endif; ?>
 
                                 <div class="category-preview">
                                     <p class="preview-label">Contoh layanan:</p>
@@ -77,6 +82,7 @@ $page_title = $game['title'] . ' - Pilih Kategori - ' . $site_config['site_name'
                                     </div>
                                 </div>
                             </div>
+
                         </a>
                     <?php endforeach; ?>
                 </div>

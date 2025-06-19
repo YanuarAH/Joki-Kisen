@@ -1,6 +1,6 @@
 <?php 
 require_once dirname(__DIR__) . '/config/games.php';
-$game_id = 'genshin';
+$game_id = 'rawat_akun';
 $game = $games[$game_id];
 $current_category = $_GET['category'] ?? 'explore_full';
 $category = $game['categories'][$current_category] ?? $game['categories']['explore_full'];

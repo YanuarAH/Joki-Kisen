@@ -1,14 +1,15 @@
 <?php
 // Konfigurasi data games dan pricelist
 $games = [
-    'genshin' => [
-        'title' => 'Genshin Impact',
+    'rawat_akun' => [
+        'title' => 'Rawat Akun',
         'image' => 'assets/images/genshin.jpg',
         'categories' => [
-            'explore_full' => [
-                'title' => 'Explore 100% Map',
-                'description' => 'Joki Explore 100% Map + Free Oculus',
+            '1_hari' => [
+                'title' => 'Rawat Akun 1 Hari',
+                'description' => 'Penugasan, Habisin Trailbaze Power selama 1 hari',
                 'image' => 'assets/images/genshin/area/ancient.jpg',
+                'price' => '5K',
                 'services' => [
                     ['name' => 'Mondstadt', 'price' => '15K', 'unit' => 'all wilayah', 'image' => 'assets/images/genshin/area/moondstat.jpg'],
                     ['name' => 'Dragonspine', 'price' => '40K', 'image' => 'assets/images/genshin/area/dragonspine.jpg'],
@@ -27,10 +28,11 @@ $games = [
                     ['name' => 'Ancient Sacred Mountain', 'price' => '50K', 'image' => 'assets/images/genshin/area/ancient.jpg'],
                 ]
             ],
-            'explore_percent' => [
-                'title' => 'Explore Per 1%',
-                'description' => 'Joki Explore Per 1% Map + Free Oculus (ga termasuk all quest, quest seadanya)',
+            '1_minggu' => [
+                'title' => 'Rawat Akun 1 Minggu',
+                'description' => 'Penugasan, Habisin Trailbaze Power selama 7 hari',
                 'image' => 'assets/images/genshin/map/chasm.jpg',
+                'price' => '5K',
                 'services' => [
                     ['name' => 'Mondstadt', 'price' => '225', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/Mondstadt.jpg'],
                     ['name' => 'Dragonspine', 'price' => '575', 'unit' => '1% (Perak)', 'image' => 'assets/images/genshin/map/dragonspine.jpg'],
@@ -49,10 +51,11 @@ $games = [
                 ]
 
             ],
-            'quest' => [
-                'title' => 'All Quest',
-                'description' => 'Joki Semua Jenis Quest Genshin Impact',
+            '1_bulan' => [
+                'title' => 'Rawat Akun 1 Bulan',
+                'description' => 'Penugasan, Habisin Trailbaze Power selama 30 hari',
                 'image' => 'assets/images/genshin/quest/char.jpg',
+                'price' => '5K',
                 'services' => [
                     ['name' => 'Quest Archon', 'price' => '25K', 'unit' => 'act', 'image' => 'assets/images/genshin/quest/archon.jpg'],
                     ['name' => 'Quest Karakter', 'price' => '25K', 'unit' => 'karakter', 'image' => 'assets/images/genshin/quest/char.jpg'],
@@ -60,10 +63,25 @@ $games = [
                     ['name' => 'Quest Dunia (Per Chapter)', 'price' => '8K', 'unit' => 'chapter', 'image' => 'assets/images/genshin/quest/world_2.jpg'],
                 ]
             ],
-            'services' => [
-                'title' => 'Layanan Lainnya',
-                'description' => 'Berbagai Layanan Joki Genshin Impact',
+            '1_minggu_premium' => [
+                'title' => 'Rawat Akun 1 Minggu Premium',
+                'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 7 hari',
                 'image' => 'assets/images/genshin/lainnya.png',
+                'price' => '5K',
+                'services' => [
+                    ['name' => 'Open Teleport', 'price' => '2.5K', 'unit' => 'teleport'],
+                    ['name' => 'Mancing R5 Weapon', 'price' => '40K', 'unit' => 'weapon'],
+                    ['name' => 'Event Story All Clear', 'price' => '25K', 'unit' => 'event'],
+                    ['name' => 'Oculus', 'price' => '1K', 'unit' => 'oculus'],
+                    ['name' => 'Rawat Akun (2/5)', 'price' => '30K', 'unit' => '7 hari'],
+                    ['name' => 'Spam Domain', 'price' => '20K', 'unit' => '10x run'],
+                ]
+            ],
+            '1_bulan_premium' => [
+                'title' => 'Rawat Akun 1 Bulan Premium',
+                'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 30 hari',
+                'image' => 'assets/images/genshin/lainnya.png',
+                'price' => '5K',
                 'services' => [
                     ['name' => 'Open Teleport', 'price' => '2.5K', 'unit' => 'teleport'],
                     ['name' => 'Mancing R5 Weapon', 'price' => '40K', 'unit' => 'weapon'],
