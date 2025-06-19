@@ -21,31 +21,20 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             <div class="container">
                 <div class="carousel-container">
                     <div class="carousel-wrapper">
-                        <div class="carousel-slide active">
-                            <div class="carousel-content">
-                                <h2 class="carousel-title">Selamat Datang di Joki Epsi</h2>
-                                <p class="carousel-subtitle">Platform joki game terpercaya untuk semua kebutuhan gaming Anda</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="carousel-content">
-                                <h2 class="carousel-title">Joki Murah Terpercaya</h2>
-                                <p class="carousel-subtitle">Harga terjangkau dengan kualitas layanan terbaik dan hasil memuaskan</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="carousel-content">
-                                <h2 class="carousel-title">Support lewat Saweria/Epsi</h2>
-                                <p class="carousel-subtitle">Dukung kami melalui donasi untuk layanan yang lebih baik</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="carousel-content">
-                                <h2 class="carousel-title">Joki Lain Contact WA/TikTok</h2>
-                                <p class="carousel-subtitle">Hubungi kami untuk layanan joki game lainnya yang tidak tersedia</p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="carousel-slide active">
+        <img src="assets/images/carousel/c1.jpg" alt="Slide 1">
+    </div>
+    <div class="carousel-slide">
+        <img src="assets/images/carousel/c2.jpg" alt="Slide 2">
+    </div>
+    <div class="carousel-slide">
+        <img src="assets/images/carousel/c3.jpg" alt="Slide 3">
+    </div>
+    <div class="carousel-slide">
+        <img src="assets/images/carousel/c4.jpg" alt="Slide 4">
+    </div>
+</div>
+
                     
                     <!-- Carousel Navigation -->
                     <div class="carousel-nav">
