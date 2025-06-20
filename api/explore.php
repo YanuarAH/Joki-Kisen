@@ -64,7 +64,7 @@ $game = $games[$game_id];
                                 <?php endif; ?>
 
                                 <div class="category-preview">
-                                    <p class="preview-label">Contoh Layanan:</p>
+                                    <!-- <p class="preview-label">Contoh Layanan:</p> -->
                                     <div class="preview-services">
                                         <?php
                                         $preview_services = array_slice($category['services'], 0, 2);
