@@ -29,14 +29,14 @@ $games = [
             '1_minggu_premium' => [
                 'title' => 'Rawat Akun 1 Minggu Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 7 hari',
-                'image' => 'assets/images/hsr/rawat-akun/1minggu premium.avif',
+                'image' => 'assets/images/hsr/rawat-akun/1minggu premium.jpg',
                 'price' => '20K',
                 'services' => []
             ],
             '1_bulan_premium' => [
                 'title' => 'Rawat Akun 1 Bulan Premium',
                 'description' => 'Penugasan, Habisin Trailbaze, dan Simulated Universe Power selama 30 hari',
-                'image' => 'assets/images/hsr/rawat-akun/1bulan premium.avif',
+                'image' => 'assets/images/hsr/rawat-akun/1bulan premium.jpg',
                 'price' => '80K',
                 'services' => []
             ]
@@ -71,7 +71,7 @@ $games = [
     ],
     'quest' => [
         'title' => 'Quest',
-        'image' => 'assets/images/hsr/quest/quest.avif',
+        'image' => 'assets/images/hsr/quest/quest.jpg',
         'categories' => [
             'misi-kuning' => [
                 'title' => 'Misi Kuning / Oren',
